@@ -1,0 +1,435 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Annotation types &mdash; Elsevier Fingerprint Engine 7.6.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/Elsevier.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '7.6.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="shortcut icon" href="_static/QuarterCircle.ico"/>
+    <link rel="top" title="Elsevier Fingerprint Engine 7.6.0.0 documentation" href="index.html" />
+    <link rel="next" title="Part of Speech Tagging" href="KEPOSTagging.html" />
+    <link rel="prev" title="Thesaurus Static Objects" href="KEThesaurus.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="KEPOSTagging.html" title="Part of Speech Tagging"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="KEThesaurus.html" title="Thesaurus Static Objects"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Elsevier Fingerprint Engine 7.6.0.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="annotation-types">
+<span id="keannotationtypes"></span><h1>Annotation types<a class="headerlink" href="#annotation-types" title="Permalink to this headline">¶</a></h1>
+<p>The following annotation types are currently available for use in activities. Note that for TokenRanges there are a number of subtypes.</p>
+<ul class="simple">
+<li><a class="reference internal" href="#abbreviationannotationtype"><em>TACO.Data.Abbreviation</em></a></li>
+<li><a class="reference internal" href="#conceptannotationtype"><em>TACO.Data.ConceptAnnotation</em></a></li>
+<li><a class="reference internal" href="#languageannotationtype"><em>TACO.Data.LanguageAnnotation</em></a></li>
+<li><a class="reference internal" href="#termannotationtype"><em>TACO.Data.TermAnnotation</em></a></li>
+<li><a class="reference internal" href="#tokenannotationtype"><em>TACO.Data.Token</em></a></li>
+<li><a class="reference internal" href="#tokenrangeannotationtype"><em>TACO.Data.TokenRange</em></a></li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference internal" href="#expansionannotationtype"><em>Expansion types</em></a> that give alternative readings for a text, adding or deleting ranges of tokens<ul>
+<li><tt class="docutils literal"><span class="pre">TACO.Data.Expansion</span></tt></li>
+<li><tt class="docutils literal"><span class="pre">TACO.Data.ArrayExpansion</span></tt></li>
+<li><tt class="docutils literal"><span class="pre">TACO.Data.EmptyExpansion</span></tt></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tokenpatternannotationtype"><em>TokenPattern types</em></a> that associate pattern information to a range of tokens<ul>
+<li><tt class="docutils literal"><span class="pre">TACO.Data.TokenPattern</span></tt></li>
+<li><tt class="docutils literal"><span class="pre">TACO.Data.MemberedTokenPattern</span></tt></li>
+<li><tt class="docutils literal"><span class="pre">TACO.Modules.FixedStringAnnotation</span></tt></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#wordannotationtype"><em>Word types</em></a> giving textual content alternatives and features for (ranges of) tokens<ul>
+<li><tt class="docutils literal"><span class="pre">TACO.Data.Word</span></tt></li>
+<li><tt class="docutils literal"><span class="pre">TACO.Data.MultiTokenWord</span></tt></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#postagannotationtype"><em>TACO.Data.POSTag</em></a></li>
+<li>TACO.Data.Sentence</li>
+<li>TACO.Data.AllCapsRegion</li>
+</ul>
+</div></blockquote>
+<div class="section" id="abbreviation">
+<span id="abbreviationannotationtype"></span><h2>Abbreviation<a class="headerlink" href="#abbreviation" title="Permalink to this headline">¶</a></h2>
+<p>Abbreviation annotations have a list member of attestations, i.e. occurrences of the short-form / long-form pairs in the text.
+Each attestation consists of a short-form and a long-form, each of which is a TokenRange. Below is the result of processing the
+input text <tt class="docutils literal"><span class="pre">Malaria</span> <span class="pre">Falciparum</span> <span class="pre">(MF)</span> <span class="pre">is</span> <span class="pre">a</span> <span class="pre">disease</span> <span class="pre">in</span> <span class="pre">Africa,</span> <span class="pre">transmitted</span> <span class="pre">by</span> <span class="pre">mosquitos.</span> <span class="pre">MF</span> <span class="pre">is</span> <span class="pre">common</span></tt>:</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;Annotation</span> <span class="na">i:type=</span><span class="s">&quot;Abbreviation&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;End&gt;</span>6<span class="nt">&lt;/End&gt;</span>
+    <span class="nt">&lt;Offset&gt;</span>5<span class="nt">&lt;/Offset&gt;</span>
+    <span class="nt">&lt;LongForm&gt;</span>
+        <span class="nt">&lt;End&gt;</span>3<span class="nt">&lt;/End&gt;</span>
+        <span class="nt">&lt;Offset&gt;</span>0<span class="nt">&lt;/Offset&gt;</span>
+    <span class="nt">&lt;/LongForm&gt;</span>
+    <span class="nt">&lt;ShortFormTokens&gt;</span>
+        <span class="nt">&lt;a:string&gt;</span>MF<span class="nt">&lt;/a:string&gt;</span>
+    <span class="nt">&lt;/ShortFormTokens&gt;</span>
+<span class="nt">&lt;/Annotation&gt;</span>
+</pre></div>
+</div>
+<p>In the example the long form is spanning tokens 0, 1, 2 (<tt class="docutils literal"><span class="pre">Malaria</span> <span class="pre">Falciparum</span></tt>), while the short format is spanning token 5 (<tt class="docutils literal"><span class="pre">MF</span></tt>).
+Note that the space and the opening parenthesis are separate tokens 3 and 4.</p>
+</div>
+<div class="section" id="language-annotation">
+<span id="languageannotationtype"></span><h2>Language Annotation<a class="headerlink" href="#language-annotation" title="Permalink to this headline">¶</a></h2>
+<p>The language annotation is produced only once per document and contains the language
+of the text at hand. The language information is encoded as a two-letter ISO-639-3 code,
+e.g. <tt class="docutils literal"><span class="pre">en</span></tt> for English or <tt class="docutils literal"><span class="pre">pt</span></tt> for Portuguese.
+The language annotation is produced by a <a class="reference internal" href="KEActivities.html#detectlanguage"><em>Detect language</em></a> activity.</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;Annotation</span> <span class="na">i:type=</span><span class="s">&quot;LanguageAnnotation&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;Language&gt;</span>en<span class="nt">&lt;/Language&gt;</span>
+<span class="nt">&lt;/Annotation&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="term-annotations">
+<span id="termannotationtype"></span><h2>Term Annotations<a class="headerlink" href="#term-annotations" title="Permalink to this headline">¶</a></h2>
+<p>Term annotations are annotations that denote that several stretches of text together may represent a term taken from
+a controlled vocabulary [such as a Thesaurus].
+Term Annotations are not properly token ranges, since terms can be recognized in a non-contiguous (meaning: containing gaps)
+number of tokens.
+For that reason, the tokens that are part of the term are listed as an array.
+For each term, the concept and term IDs are presented as properties.
+Other fields of a term annotation include:</p>
+<ul class="simple">
+<li>OrderingQuality: an assessment of the quality of ordering, i.e. whether the order of elements approximates the order of elements in the thesaurus;</li>
+<li>MatchScore: an assessment of the quality of the term match. For exact terms, this match score is 1, for normalized terms, the score is a little less. This score is used to evaluate competing terms against one another: exact terms out-score normalized terms. The match-score should not be used for ranking terms against one another.</li>
+<li>Flags</li>
+</ul>
+<div class="section" id="flags">
+<h3>Flags<a class="headerlink" href="#flags" title="Permalink to this headline">¶</a></h3>
+<p>The &#8216;Flags&#8217; field may contain a variable number of flags.
+Some flags are set during <a class="reference internal" href="KEActivities.html#findterms"><em>Term finding</em></a>, such as the value &#8216;fraction&#8217;.
+Other flags are completely variable and can be set after term finding by term-post-processing activities such as <a class="reference internal" href="KEActivities.html#flagterms"><em>FlagTerms</em></a> and <a class="reference internal" href="KEActivities.html#annotateterms"><em>Annotate Terms</em></a>.</p>
+<p>The Flag value &#8216;fraction&#8217; denotes a term annotation that was based on a part of a word: part of the term does not span a full word.
+For instance, &#8220;HUVEC&#8221; may not be a thesaurus entry term but be defined in the text as an abbreviation, short for &#8220;Human Umbilical Vein Endothelial Cells&#8221;. Now, the thesaurus may contain entries for &#8220;Umbilical Vein&#8221; [UV] and &#8220;Endothelial Cells&#8221; [EC].
+Wherever the abbreviation occurs in the text, both terms (UV and EC) will be annotated - but as fractions.
+If there were an entry term &#8216;Human Umbilical Vein Endothelial Cells&#8217; in thesaurus and &#8216;HUVEC&#8217; were annotated like that,
+it would <em>not</em> be a fraction as the entire short form is covered by the term.
+A TermAnnotation spanning a partial abbreviation <em>and</em> a full word is still a fraction, just as &#8216;one-and-a-half&#8217; is as much a fraction as &#8216;a half&#8217;.</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;Annotation</span> <span class="na">i:type=</span><span class="s">&quot;TermAnnotation&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ConceptID&gt;</span>447435<span class="nt">&lt;/ConceptID&gt;</span>
+    <span class="nt">&lt;Flags</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;MatchScore&gt;</span>0.88<span class="nt">&lt;/MatchScore&gt;</span>
+    <span class="nt">&lt;OrderingQuality&gt;</span>1<span class="nt">&lt;/OrderingQuality&gt;</span>
+    <span class="nt">&lt;TermID&gt;</span>7437<span class="nt">&lt;/TermID&gt;</span>
+    <span class="nt">&lt;Thesaurus&gt;</span>mesh2009<span class="nt">&lt;/Thesaurus&gt;</span>
+    <span class="nt">&lt;Tokens&gt;</span>
+        <span class="nt">&lt;d2p1:int&gt;</span>0<span class="nt">&lt;/d2p1:int&gt;</span>
+        <span class="nt">&lt;d2p1:int&gt;</span>2<span class="nt">&lt;/d2p1:int&gt;</span>
+    <span class="nt">&lt;/Tokens&gt;</span>
+<span class="nt">&lt;/Annotation&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="concept-annotations">
+<span id="conceptannotationtype"></span><h2>Concept Annotations<a class="headerlink" href="#concept-annotations" title="Permalink to this headline">¶</a></h2>
+<p>Concept annotations are aggregated <a class="reference internal" href="#termannotationtype"><em>term annotations</em></a>.
+The text position of terms cannot be determined from the concept annotations;
+only the ranking of concept based on the entire document is represented.
+For both concept and term annotations, the name of the thesaurus containing the terms is represented.
+This makes it possible to reference multiple thesauri in one Fingerprint Engine  call and distinguish ensuing annotations later on.</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;Annotation</span> <span class="na">i:type=</span><span class="s">&quot;ConceptAnnotation&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;AFreq&gt;</span>1<span class="nt">&lt;/AFreq&gt;</span>
+    <span class="nt">&lt;ConceptID&gt;</span>447435<span class="nt">&lt;/ConceptID&gt;</span>
+    <span class="nt">&lt;Rank&gt;</span>1<span class="nt">&lt;/Rank&gt;</span>
+    <span class="nt">&lt;Thesaurus&gt;</span>mesh2009<span class="nt">&lt;/Thesaurus&gt;</span>
+<span class="nt">&lt;/Annotation&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="token">
+<span id="tokenannotationtype"></span><h2>Token<a class="headerlink" href="#token" title="Permalink to this headline">¶</a></h2>
+<p>The <tt class="docutils literal"><span class="pre">Token</span></tt> type is to a large extent basic for all Fingerprint Engine analyses.
+Most workflows typically start with <a class="reference internal" href="KEActivities.html#tokenize"><em>tokenization</em></a>.
+Most Fingerprint Engine analysis activities need Tokens as input; the text tokens are the basic unit for analysis.
+For each token, the following properties are defined:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Offset, End : range in the text that the token describes. Note that both are zero-based, and are expressed
+in number of characters. Also note that <tt class="docutils literal"><span class="pre">End</span></tt> is referring to location of the first character <em>after</em> the token.</li>
+<li>Capitalisation : capitalisation pattern of the token.
+This property may have the values None, InitialCap, MiddleCap and Lowers.
+These values are flags and can combine. For instance, a token without Lowers but not None is all capitalised.</li>
+<li>Type: the token type. This property is also a set of flags that can combine.
+At least the main type is marked, one of: Alpha, White, Numeric, Alphanumeric, Mixed (alphanumeric with dots) and Punct.
+Other additional values are: <tt class="docutils literal"><span class="pre">HasWhitespaceLeft</span></tt> and <tt class="docutils literal"><span class="pre">HasWhitespaceRight</span></tt>, <tt class="docutils literal"><span class="pre">NoWhitespaceLeft</span></tt>,  <tt class="docutils literal"><span class="pre">NoWhitespaceRight</span></tt>
+indicating what is preceding and following the token.</li>
+</ul>
+</div></blockquote>
+<p>Below is an excerpt of the output annotation of a Tokenizer supplied with the input text <tt class="docutils literal"><span class="pre">This</span> <span class="pre">is</span> <span class="pre">a</span> <span class="pre">sample</span> <span class="pre">text</span></tt></p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;Annotation</span> <span class="na">i:type=</span><span class="s">&quot;Token&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;Capitalisation&gt;</span>InitialCap Lowers<span class="nt">&lt;/Capitalisation&gt;</span>
+    <span class="nt">&lt;End&gt;</span>4<span class="nt">&lt;/End&gt;</span>
+    <span class="nt">&lt;Offset&gt;</span>0<span class="nt">&lt;/Offset&gt;</span>
+    <span class="nt">&lt;Text&gt;</span>This<span class="nt">&lt;/Text&gt;</span>
+    <span class="nt">&lt;Type&gt;</span>Alpha HasWhitespaceLeft HasWhitespaceRight<span class="nt">&lt;/Type&gt;</span>
+<span class="nt">&lt;/Annotation&gt;</span>
+<span class="nt">&lt;Annotation</span> <span class="na">i:type=</span><span class="s">&quot;Token&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;Capitalisation&gt;</span>None<span class="nt">&lt;/Capitalisation&gt;</span>
+    <span class="nt">&lt;End&gt;</span>5<span class="nt">&lt;/End&gt;</span>
+    <span class="nt">&lt;Offset&gt;</span>4<span class="nt">&lt;/Offset&gt;</span>
+    <span class="nt">&lt;Text/&gt;</span>
+    <span class="nt">&lt;Type&gt;</span>White NoWhitespaceLeft NoWhitespaceRight<span class="nt">&lt;/Type&gt;</span>
+<span class="nt">&lt;/Annotation&gt;</span>
+</pre></div>
+</div>
+<p>The first two token annotations are shown. The first token is the word <tt class="docutils literal"><span class="pre">This</span></tt>, which starts at character 0 (<tt class="docutils literal"><span class="pre">T</span></tt>) and
+ends before character 4 (<tt class="docutils literal"><span class="pre">space</span></tt>). Its capitalization is a first capital character and then lowercase. If the text would have
+been <tt class="docutils literal"><span class="pre">ThiS</span></tt> then capitalization would have been characterized by <tt class="docutils literal"><span class="pre">Mixed</span></tt>.
+The token type is characterized as Alpha, surrounded by whitespace on both sides. Note that the start of a text is also
+characterized as whitespace.</p>
+</div>
+<div class="section" id="token-range">
+<span id="tokenrangeannotationtype"></span><h2>Token Range<a class="headerlink" href="#token-range" title="Permalink to this headline">¶</a></h2>
+<p>A token range is, obviously, specifying a range of tokens.
+Many annotation types are based on tokens, particularly the annotations that refer to a specific range of text.
+The properties for each type are different; however, some properties are shared between different types.
+The detected tokens are stored as an array, and most range annotations are based on these tokens.
+To reflect the fact that these annotations refer to tokens, these annotations define their position in the text
+in terms of positions in the token array. These annotations are, in other words, token ranges.
+The following annotations are token ranges:</p>
+<blockquote>
+<div><ul class="simple">
+<li>TACO.Data.AllCapsRegion</li>
+<li>TACO.Data.ArrayExpansion</li>
+<li>TACO.Data.Expansion</li>
+<li>TACO.Data.EmptyExpansion</li>
+<li>TACO.Data.Word</li>
+<li>TACO.Data.MultiTokenWord</li>
+<li>TACO.Data.POSTag</li>
+<li>TACO.Data.Sentence</li>
+<li>TACO.Data.TokenPattern</li>
+<li>TACO.Data.TokenRange</li>
+<li>TACO.Modules.FixedExpression</li>
+<li>TACO.Modules.FixedStringAnnotation</li>
+<li>TACO.Modules.MemberedTokenPattern</li>
+</ul>
+</div></blockquote>
+<p>All token ranges have a number of properties in common. These will be described here, while properties specific to one or more of the types
+listed above will be described in the corresponding section.
+The properties <tt class="docutils literal"><span class="pre">Offset</span></tt> and <tt class="docutils literal"><span class="pre">End</span></tt> are common to all token ranges. They designate the offset and end of
+the token range in the underlying array of tokens. Note that these properties are also zero-based and are expressed in number of tokens in contrast
+to the <tt class="docutils literal"><span class="pre">Token</span></tt> annotation, that uses number of characters. An example token range annotation is shown below, as output of tokenizing the text
+<tt class="docutils literal"><span class="pre">This</span> <span class="pre">is</span> <span class="pre">a</span> <span class="pre">sample</span> <span class="pre">text</span></tt></p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;Annotation</span> <span class="na">i:type=</span><span class="s">&quot;Sentence&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;End&gt;</span>9<span class="nt">&lt;/End&gt;</span>
+    <span class="nt">&lt;Offset&gt;</span>0<span class="nt">&lt;/Offset&gt;</span>
+<span class="nt">&lt;/Annotation&gt;</span>
+</pre></div>
+</div>
+<p>This example is a token range of the <tt class="docutils literal"><span class="pre">Sentence</span></tt> type. Note that the entire text contains 9 tokens: 5 words and 4 interword spaces. The
+<tt class="docutils literal"><span class="pre">Sentence</span></tt> token range starts at token 0 (<tt class="docutils literal"><span class="pre">This</span></tt>) and end at the nonexisting token 9.</p>
+</div>
+<div class="section" id="word">
+<span id="wordannotationtype"></span><h2>Word<a class="headerlink" href="#word" title="Permalink to this headline">¶</a></h2>
+<p>The tokenizer annotates a Word annotation for all tokens (or token ranges) that are a meaningful alphanumeric unit.
+Subsequent activities (such as <a class="reference internal" href="KEActivities.html#normalize"><em>normalize</em></a>) can assign normal or variant forms for these words, stored in
+Word annotations. The <tt class="docutils literal"><span class="pre">Offset</span></tt> and <tt class="docutils literal"><span class="pre">End</span></tt> properties are converted in this annotation type to the <tt class="docutils literal"><span class="pre">TextOffset</span></tt> and <tt class="docutils literal"><span class="pre">TextEnd</span></tt>
+properties by an <a class="reference internal" href="KEStaticObjects.html#annotationextender"><em>annotation extender</em></a>.
+Word annotations have the following properties:</p>
+<ul class="simple">
+<li>Flags*    : flags associated with the word (see <a class="reference internal" href="KEActivities.html#markupwords"><em>the mark-up activity</em></a>)</li>
+<li>Score*    : this value is a confidence value for the annotation; for Words it is always 1</li>
+<li>Text*     : the textual content of this particular word form.</li>
+<li>TextOffset : the location of the start of the word expressed in number of characters</li>
+<li>TextEnd*    : the location of the end of the word expressed in number of characters. Note that this value refers to the first character <em>not</em> part of the word.</li>
+</ul>
+<p>Note that a Word spans exactly one <tt class="docutils literal"><span class="pre">Token</span></tt>. If a Word spans multiple tokens (which can be the case for re-constructed words as a result of
+<a class="reference internal" href="KEActivities.html#dehyphenate"><em>de-hyphenation</em></a>) the word is stored as a <tt class="docutils literal"><span class="pre">MultiTokenWord</span></tt>.</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;Annotation</span> <span class="na">i:type=</span><span class="s">&quot;Word&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;Flags&gt;</span>Empty<span class="nt">&lt;/Flags&gt;</span>
+    <span class="nt">&lt;Score&gt;</span>1<span class="nt">&lt;/Score&gt;</span>
+    <span class="nt">&lt;Text&gt;</span>sample<span class="nt">&lt;/Text&gt;</span>
+    <span class="nt">&lt;TextEnd&gt;</span>16<span class="nt">&lt;/TextEnd&gt;</span>
+    <span class="nt">&lt;TextOffset&gt;</span>10<span class="nt">&lt;/TextOffset&gt;</span>
+    <span class="nt">&lt;Token&gt;</span>6<span class="nt">&lt;/Token&gt;</span>
+<span class="nt">&lt;/Annotation&gt;</span>
+</pre></div>
+</div>
+<p>The example annotation above is from the input text <tt class="docutils literal"><span class="pre">This</span> <span class="pre">is</span> <span class="pre">a</span> <span class="pre">sample</span> <span class="pre">text</span></tt>. Note that the <tt class="docutils literal"><span class="pre">Word</span></tt> annotation
+refers to token 6, which spans the characters starting at 10 ending just before character 16.</p>
+</div>
+<div class="section" id="expansions">
+<span id="expansionannotationtype"></span><h2>Expansions<a class="headerlink" href="#expansions" title="Permalink to this headline">¶</a></h2>
+<p>Expansions have a scope designated by the <tt class="docutils literal"><span class="pre">Offset</span></tt> and <tt class="docutils literal"><span class="pre">End</span></tt> properties common to all token ranges.
+A variant of the Expansion type is the EmptyExpansion.
+This is typically an expansion that is produced at the point in the text where the long-form short form combination is detected.
+There the short form is
+removed during expansion, since semantically the author does not mention the term twice.</p>
+<p>The expanded form of this token range is denoted by an array property named <tt class="docutils literal"><span class="pre">Alternative</span></tt>, that designates
+the token range that can replace the original input.
+Below is the result of processing the input text <tt class="docutils literal"><span class="pre">Malaria</span> <span class="pre">Falciparum</span> <span class="pre">(MF)</span> <span class="pre">is</span> <span class="pre">a</span> <span class="pre">disease</span> <span class="pre">in</span> <span class="pre">Africa,</span> <span class="pre">transmitted</span> <span class="pre">by</span> <span class="pre">mosquitos.</span>
+<span class="pre">MF</span> <span class="pre">is</span> <span class="pre">common</span></tt>.
+As described in the <a class="reference internal" href="#abbreviationannotationtype"><em>Abbreviation</em></a> section, the abbreviation <tt class="docutils literal"><span class="pre">MF</span></tt> is connected
+to the long form <tt class="docutils literal"><span class="pre">Malaria</span> <span class="pre">Falciparum</span></tt>.</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;Annotation</span> <span class="na">i:type=</span><span class="s">&quot;EmptyExpansion&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;End&gt;</span>7<span class="nt">&lt;/End&gt;</span>
+    <span class="nt">&lt;Offset&gt;</span>4<span class="nt">&lt;/Offset&gt;</span>
+<span class="nt">&lt;/Annotation&gt;</span>
+<span class="nt">&lt;Annotation</span> <span class="na">i:type=</span><span class="s">&quot;Expansion&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;End&gt;</span>27<span class="nt">&lt;/End&gt;</span>
+    <span class="nt">&lt;Offset&gt;</span>26<span class="nt">&lt;/Offset&gt;</span>
+    <span class="nt">&lt;Alternative&gt;</span>
+        <span class="nt">&lt;End&gt;</span>3<span class="nt">&lt;/End&gt;</span>
+        <span class="nt">&lt;Offset&gt;</span>0<span class="nt">&lt;/Offset&gt;</span>
+    <span class="nt">&lt;/Alternative&gt;</span>
+<span class="nt">&lt;/Annotation&gt;</span>
+</pre></div>
+</div>
+<p>The first expansion annotation is an EmptyExpansion, expanding tokens 4 to 6 (text <tt class="docutils literal"><span class="pre">(MF)</span></tt>) to nothing.
+The second expansion annotation is a regular Expansion, expanding token 26 (text <tt class="docutils literal"><span class="pre">MF</span></tt> in the second sentence) with tokens 0 to 2.</p>
+</div>
+<div class="section" id="postag-annotation">
+<span id="postagannotationtype"></span><h2>POSTag Annotation<a class="headerlink" href="#postag-annotation" title="Permalink to this headline">¶</a></h2>
+<p>POSTag annotations are token ranges with a <tt class="docutils literal"><span class="pre">Tag</span></tt> property designating the part-of-speech label assigned to this input text.
+If the <tt class="docutils literal"><span class="pre">BeamEngine</span></tt> POSTag computation engine is used (see the <a class="reference internal" href="KEActivities.html#tagpartsofspeech"><em>POSTagger activity</em></a>),
+the nearest alternative tag for this tag is also annotated in a
+property <tt class="docutils literal"><span class="pre">Alternative</span></tt>, as well as its proximity on a logarithmical scale.
+The proximity is expressed as <tt class="docutils literal"><span class="pre">Distance</span></tt>; if this figure is e.g. 5, this means that the alternative tag is 10^-5 as likely as the first choice.
+For English, a subset of the Brown tagset has been chosen as possible tags.</p>
+<p>Below is a POS tag annotation of the text <tt class="docutils literal"><span class="pre">This</span> <span class="pre">is</span> <span class="pre">a</span> <span class="pre">sample</span> <span class="pre">text</span></tt>:</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;Annotation</span> <span class="na">i:type=</span><span class="s">&quot;POSTag&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;End&gt;</span>7<span class="nt">&lt;/End&gt;</span>
+    <span class="nt">&lt;Offset&gt;</span>6<span class="nt">&lt;/Offset&gt;</span>
+    <span class="nt">&lt;Alternative&gt;</span>vb<span class="nt">&lt;/Alternative&gt;</span>
+    <span class="nt">&lt;Distance&gt;</span>0.03375201829564034<span class="nt">&lt;/Distance&gt;</span>
+    <span class="nt">&lt;LexicalSource&gt;</span>0<span class="nt">&lt;/LexicalSource&gt;</span>
+    <span class="nt">&lt;SemTag&gt;</span>nn<span class="nt">&lt;/SemTag&gt;</span>
+    <span class="nt">&lt;Tag&gt;</span>nn<span class="nt">&lt;/Tag&gt;</span>
+<span class="nt">&lt;/Annotation&gt;</span>
+</pre></div>
+</div>
+<p>This annotation refers to token number 6 (<tt class="docutils literal"><span class="pre">sample</span></tt>), which is tagged as a <tt class="docutils literal"><span class="pre">nn</span></tt>: a noun. Note that an alternative tag is <tt class="docutils literal"><span class="pre">vb</span></tt> (verb),
+but that is 10^-0.034 = 0.92, so almost as likely.</p>
+<p>The list of possible POS tags is large, and is described in a <a class="reference internal" href="KEPOSTagging.html#postagstable"><em>separate table</em></a>.</p>
+</div>
+<div class="section" id="token-pattern-annotations">
+<span id="tokenpatternannotationtype"></span><h2>Token Pattern Annotations<a class="headerlink" href="#token-pattern-annotations" title="Permalink to this headline">¶</a></h2>
+<p>The Elsevier Fingerprint Engine has several activities generating <tt class="docutils literal"><span class="pre">TokenPattern</span></tt> annotations.
+Token Pattern annotations are RangeAnnotations that express that a range of tokens denotes a pattern of a certain type.
+Token Patterns are recognized by Regular expression annotators but also by the POS-Pattern annotation activity.</p>
+<p>The conceptual meaning of Token Patterns is expressed by the <tt class="docutils literal"><span class="pre">Name</span></tt> property assigned to them, typically designating
+the class of items that the pattern belongs to, viz. &#8216;NP&#8217; for noun phrases, &#8216;copyright&#8217; for copyright notices in the text, etc.</p>
+<p>The TokenPattern annotations also have an integer &#8216;Score&#8217; property that designates the confidence or level of evidence available
+for this annotation; a lower value expresses that the annotator is not so certain that the given label [in Name] is the only correct label.
+There is no absolute maximum or threshold associated with the value, so the interpretation of the score is only possible relative to the other annotations available for the same stretch of text.</p>
+<p>For instance, if you use a POS-Pattern finding activity for finding noun phrases, you could select the name &#8216;NP&#8217;, as in the example below,
+again from the input text <tt class="docutils literal"><span class="pre">This</span> <span class="pre">is</span> <span class="pre">a</span> <span class="pre">sample</span> <span class="pre">text</span></tt>.</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;Annotation</span> <span class="na">i:type=</span><span class="s">&quot;TokenPattern&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;End&gt;</span>9<span class="nt">&lt;/End&gt;</span>
+    <span class="nt">&lt;Offset&gt;</span>6<span class="nt">&lt;/Offset&gt;</span>
+    <span class="nt">&lt;Name&gt;</span>NP<span class="nt">&lt;/Name&gt;</span>
+<span class="nt">&lt;/Annotation&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Annotation types</a><ul>
+<li><a class="reference internal" href="#abbreviation">Abbreviation</a></li>
+<li><a class="reference internal" href="#language-annotation">Language Annotation</a></li>
+<li><a class="reference internal" href="#term-annotations">Term Annotations</a><ul>
+<li><a class="reference internal" href="#flags">Flags</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#concept-annotations">Concept Annotations</a></li>
+<li><a class="reference internal" href="#token">Token</a></li>
+<li><a class="reference internal" href="#token-range">Token Range</a></li>
+<li><a class="reference internal" href="#word">Word</a></li>
+<li><a class="reference internal" href="#expansions">Expansions</a></li>
+<li><a class="reference internal" href="#postag-annotation">POSTag Annotation</a></li>
+<li><a class="reference internal" href="#token-pattern-annotations">Token Pattern Annotations</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="KEThesaurus.html"
+                        title="previous chapter">Thesaurus Static Objects</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="KEPOSTagging.html"
+                        title="next chapter">Part of Speech Tagging</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="KEPOSTagging.html" title="Part of Speech Tagging"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="KEThesaurus.html" title="Thesaurus Static Objects"
+             >previous</a> |</li>
+        <li><a href="index.html">Elsevier Fingerprint Engine 7.6.0.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Elsevier.
+      Last updated on Apr 01, 2015.
+    </div>
+  </body>
+</html>
