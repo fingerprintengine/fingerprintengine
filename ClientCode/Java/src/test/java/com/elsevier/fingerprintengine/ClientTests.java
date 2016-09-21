@@ -12,10 +12,11 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
+@Ignore("Can only be run against an instance of fingerprint engine so ignored for CI")
 public class ClientTests {
 
 	private static final String httpUrl = "http://localhost/Taco7600/TacoService.svc";
-	private static final String httpsUrl = "https://fingerprintengine.scivalcontent.com/TACO7600/TacoService.svc";
+	private static final String httpsUrl = "http://10.183.12.203/TACO7600/TacoService.svc";
 	private static final String username = "";			// replace with your own
 	private static final String password = "";			// replace with your own
 	private static final String workflow = "MeSH";
