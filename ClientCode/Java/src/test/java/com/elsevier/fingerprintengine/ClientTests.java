@@ -15,15 +15,15 @@ import static org.junit.Assert.*;
 @Ignore("Can only be run against an instance of fingerprint engine so ignored for CI")
 public class ClientTests {
 
-	private static final String httpUrl = "http://localhost/Taco7600/TacoService.svc";
-	private static final String httpsUrl = "http://10.183.12.203/TACO7600/TacoService.svc";
+	private static final String httpUrl = "http://10.183.13.93/taco/TacoService.svc";
+	private static final String httpsUrl = "https://10.183.12.203/TACO7600/TacoService.svc";
 	private static final String username = "";			// replace with your own
 	private static final String password = "";			// replace with your own
 	private static final String workflow = "MeSH";
 	
 	private static final String BEAR_FULLTEXT = "Knowledge of placentation in bears was limited to analysis of a single shed placenta of the European brown bear. It was shown that the mature allantoic placenta is discoidal, endotheliochorial, provided with a circular marginal hematoma, and that the allantoic sac is large and permanent. The present study, based on a small series of conceptuses younger than any previously examined, provides new details concerning implantation and the morphogenesis of the fetal membranes, placenta and paraplacental organs. Implantation in the black bear is central and superficial; the orientation of the embryonic disc is antimesometrial. Amniogenesis and chorion formation are almost certainly accomplished by folding. The decidual reaction is minimal. As in other carnivores the yolk sac is prominent early, but progressively declines. A well developed choriovitelline placenta is formed early, but is eliminated before the limb bud stage. The bilaminar omphalopleure persists only slightly beyond the limb bud stage. The allantois, however, is extensive and permanent. Initially, the allantoic placenta is cup shaped but eventually flattens out to form the discoidal placenta. It is lobuliform and endotheliochorial, and probably a marked attenuation of the interhemal membrane occurs in later stages. The marginal hematoma, which is completed before the limb bud stage, is formed by enlargement and coalescence of separate extravasations, and apparently remains fully functional to term. Overall, morphogenetic sequences and relationships in bears more nearly resemble those of the dog than of other carnivores. (35 references.)";
 	
-    private Client client = new Client(httpsUrl, username, password); 
+    private Client client = new Client(httpsUrl, username, password);
 	
 	@Test
 	public void testCategorizeOverHttps() throws Exception {

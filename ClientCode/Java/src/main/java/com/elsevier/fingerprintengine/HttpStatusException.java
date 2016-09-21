@@ -21,4 +21,12 @@ public class HttpStatusException extends HttpException {
 	public int getStatusCode() {
 		return statusCode;
 	}
+
+	@Override
+	public String toString() {
+		return "HttpStatusException{" +
+			"statusCode=" + statusCode +
+			",message=" + getMessage() +
+			'}';
+	}
 }

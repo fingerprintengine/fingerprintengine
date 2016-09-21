@@ -77,7 +77,7 @@ public class Client implements IClient {
 		Response response = client.post(data);
 
 		if (response.getStatus() != Response.Status.OK.getStatusCode()) {
-			throw new HttpStatusException(response.getStatus(), "End point returned status code " + response.getStatus());
+			throw new HttpStatusException(response.getStatus(), response.readEntity(String.class));
 		}
 		return response;
 	}
