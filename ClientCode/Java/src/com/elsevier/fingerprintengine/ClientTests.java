@@ -6,8 +6,8 @@ import org.apache.http.client.ClientProtocolException;
 import org.junit.Test;
 
 public class ClientTests {
-	private final String httpUrl = "http://localhost/Taco7500/TacoService.svc";
-	private final String httpsUrl = "https://fingerprintengine.ptgels.com/TACO7500/TacoService.svc";
+	private final String httpUrl = "http://localhost/taco7800/TacoService.svc";
+	private final String httpsUrl = "https://fingerprintengine.scivalcontent.com/taco7800/TacoService.svc/";
 	private final String username = "user";
 	private final String password = "password";
 	private final String workflow = "MeSHXml";
