@@ -2,7 +2,7 @@
 
 import FingerprintEngineClient as efe
 
-client = efe.FingerprintEngineClient('https://fingerprintengine.ptgels.com/TACO7600/TacoService.svc/', '#########', '********')
+client = efe.FingerprintEngineClient('https://fingerprintengine.scivalcontent.com/taco7800/TacoService.svc/', '#########', '********')
 
 fp = client.index('MeSHXml', 'malaria', 'bad disease').toFingerprint()
 for concept in fp:
