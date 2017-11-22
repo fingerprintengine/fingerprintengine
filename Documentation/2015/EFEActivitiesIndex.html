@@ -1,0 +1,374 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Activity Index &mdash; Elsevier Fingerprint Engine 7.6.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/Elsevier.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '7.6.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="shortcut icon" href="_static/QuarterCircle.ico"/>
+    <link rel="top" title="Elsevier Fingerprint Engine 7.6.0.0 documentation" href="index.html" />
+    <link rel="next" title="Workflow Lists" href="KEWorkflowList.html" />
+    <link rel="prev" title="Activities" href="KEActivities.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="KEWorkflowList.html" title="Workflow Lists"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="KEActivities.html" title="Activities"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Elsevier Fingerprint Engine 7.6.0.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="activity-index">
+<h1>Activity Index<a class="headerlink" href="#activity-index" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="activities-alphabetical">
+<h2>Activities (alphabetical)<a class="headerlink" href="#activities-alphabetical" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="KEActivities.html#addnoncapitalalternatives"><em>Add Non Capital Alternatives</em></a></p>
+<blockquote>
+<div>Activity that adds a lower-case text variant to stretches of text that are in all-caps</div></blockquote>
+<p><a class="reference internal" href="KEActivities.html#annotatehomonyms"><em>Annotate Homonyms</em></a></p>
+<blockquote>
+<div>The activity AnnotateHomonyms annotates locations that host multiple terms [effectively: homonyms] for further processing.</div></blockquote>
+<p><a class="reference internal" href="KEActivities.html#annotatepatterns"><em>Annotate Patterns</em></a></p>
+<blockquote>
+<div><p>Pattern annotation activity</p>
+<p>References static objects:</p>
+<ul class="simple">
+<li>Type <a class="reference internal" href="KEPatternAnnotators.html#patternannotatorstaticobject"><em>PatternAnnotator</em></a>, specify name by Annotator</li>
+</ul>
+</div></blockquote>
+<p><a class="reference internal" href="KEActivities.html#annotatepospatterns"><em>Annotate P O S Patterns</em></a></p>
+<blockquote>
+<div><p>Pattern annotation activity that annotates patterns POS tags.</p>
+<p>References static objects:</p>
+<ul class="simple">
+<li>Type <a class="reference internal" href="KEExpressions.html#pospatternmatcherstaticobject"><em>POSPatternMatcher</em></a>, specify name by Annotator</li>
+</ul>
+</div></blockquote>
+<p><a class="reference internal" href="KEActivities.html#annotateterms"><em>Annotate Terms</em></a></p>
+<blockquote>
+<div><p>The activity AnnotateTerms flags terms based on concept id lists or term id lists.</p>
+<p>References static objects:</p>
+<ul class="simple">
+<li>Type <a class="reference internal" href="KEStaticObjects.html#attributesstaticobject"><em>Attributes</em></a>, specify name by ConceptAttributes (Optional)</li>
+<li>Type <a class="reference internal" href="KEDisambiguation.html#disambiguatorstaticobject"><em>Disambiguator</em></a>, specify name by TermAnnotator (Optional)</li>
+<li>Type <a class="reference internal" href="KEStaticObjects.html#attributesstaticobject"><em>Attributes</em></a>, specify name by TermAttributes (Optional)</li>
+<li>Type <a class="reference internal" href="KEExpressions.html#tokenrangematcherstaticobject"><em>TokenRangeMatcher</em></a>, specify name by ContextMatcher (Optional)</li>
+</ul>
+</div></blockquote>
+<p><a class="reference internal" href="KEActivities.html#annotatetokenrangepatterns"><em>Annotate Token Range Patterns</em></a></p>
+<blockquote>
+<div><p>Pattern annotation activity based on token ranges [rather than plain input text]. Produces RangeAnnotations.</p>
+<p>References static objects:</p>
+<ul class="simple">
+<li>Type <a class="reference internal" href="KEExpressions.html#tokenrangematcherstaticobject"><em>TokenRangeMatcher</em></a>, specify name by Annotator</li>
+<li>Type <a class="reference internal" href="KEStaticObjects.html#normalizerstaticobject"><em>Normalizer</em></a>, specify name by Normalizer (Optional)</li>
+</ul>
+</div></blockquote>
+<p><a class="reference internal" href="KEActivities.html#annotatetokenranges"><em>Annotate Token Ranges</em></a></p>
+<blockquote>
+<div><p>Pattern annotation activity based on token ranges [rather than plain input text]. Produces TokenPatterns.</p>
+<p>References static objects:</p>
+<ul class="simple">
+<li>Type <a class="reference internal" href="KEExpressions.html#tokenrangematcherstaticobject"><em>TokenRangeMatcher</em></a>, specify name by Annotator</li>
+</ul>
+</div></blockquote>
+<p><a class="reference internal" href="KEActivities.html#dehyphenate"><em>Dehyphenate</em></a></p>
+<blockquote>
+<div><p>The Dehyphenate activity looks for alpha-hyphen-whitespace-alpha (A-WA) patterns and tries to reconstruct whole words if we can confirm that none of the broken-up words are confirmed to exist, while the whole is.</p>
+<p>References static objects:</p>
+<ul class="simple">
+<li>Type <a class="reference internal" href="KEStaticObjects.html#wordsetstaticobject"><em>WordSet</em></a>, specify name by Words</li>
+</ul>
+</div></blockquote>
+<p><a class="reference internal" href="KEActivities.html#detectabbreviations"><em>Detect Abbreviations</em></a></p>
+<blockquote>
+<div><p>The DetectAbbreviations activity provides functionality to detect abbreviations. It requires input with tokens, sentences, text and normalizations filled out.</p>
+<p>References static objects:</p>
+<ul class="simple">
+<li>Type <a class="reference internal" href="KEStaticObjects.html#normalizerstaticobject"><em>Normalizer</em></a>, specify name by Normalizer</li>
+<li>Type <a class="reference internal" href="KEStaticObjects.html#abbreviationsettingsstaticobject"><em>AbbreviationSettings</em></a>, specify name by AbbreviationSettings (Optional)</li>
+</ul>
+</div></blockquote>
+<p><a class="reference internal" href="KEActivities.html#detectcapitalisationregions"><em>Detect Capitalisation Regions</em></a></p>
+<blockquote>
+<div>The DetectCapitalisationRegions activity detects regions in the text with special capitalisations.</div></blockquote>
+<p><a class="reference internal" href="KEActivities.html#detectsentences"><em>Detect Sentences</em></a></p>
+<blockquote>
+<div><p>DetectSentences activity detects sentences based on the previous tokenization and, optionally, detected patterns.</p>
+<p>References static objects:</p>
+<ul class="simple">
+<li>Type <a class="reference internal" href="KEStaticObjects.html#sentencedetectorstaticobject"><em>SentenceDetector</em></a>, specify name by SentenceDetector</li>
+</ul>
+</div></blockquote>
+<p><a class="reference internal" href="KEActivities.html#distributetermflags"><em>Distribute Term Flags</em></a></p>
+<blockquote>
+<div>The activity DistributeTermFlags distributes flags; either without restriction or based on abbreviation expansions alone.</div></blockquote>
+<p><a class="reference internal" href="KEActivities.html#expandabbreviations"><em>Expand Abbreviations</em></a></p>
+<blockquote>
+<div>Class that defines methods to put found abbreviations to use: expand portions of text that represent an abbreviation to their long forms, and eliminate short forms altogether.</div></blockquote>
+<p><a class="reference internal" href="KEActivities.html#expandconceptcoordinations"><em>Expand Concept Coordinations</em></a></p>
+<blockquote>
+<div><p>Expand Concept Coordinations activity adds alternative [expanded] readings for a text if there is enough reason to assume, based on an existing set of concepts [thesaurus], that the text contains an elliptic coordination.</p>
+<p>References static objects:</p>
+<ul class="simple">
+<li>Type <em class="xref std std-ref">ConceptCoordinationPatternMatcher</em>, specify name by CoordinationPatterns (Optional)</li>
+<li>Type <a class="reference internal" href="KEStaticObjects.html#wordsetstaticobject"><em>WordSet</em></a>, specify name by Coordinators</li>
+<li>Type <a class="reference internal" href="KEThesaurus.html#thesaurusstaticobject"><em>Thesaurus</em></a>, specify name by Thesaurus</li>
+</ul>
+</div></blockquote>
+<p><a class="reference internal" href="KEActivities.html#expandcoordinations"><em>Expand Coordinations</em></a></p>
+<blockquote>
+<div><p>Expand coordinations activity expands morphological coordinations such as &#8216;homo- and heterozygote&#8217; based on a predefined set of coordinating prefixes</p>
+<p>References static objects:</p>
+<ul class="simple">
+<li>Type <a class="reference internal" href="KEExpressions.html#tokenpatternmatcherstaticobject"><em>TokenPatternMatcher</em></a>, specify name by CoordinationPatterns (Optional)</li>
+<li>Type <a class="reference internal" href="KEStaticObjects.html#wordsetstaticobject"><em>WordSet</em></a>, specify name by Coordinators</li>
+<li>Type <a class="reference internal" href="KEStaticObjects.html#prefixpairstaticobject"><em>PrefixPair</em></a>, specify name by WordPairs</li>
+</ul>
+</div></blockquote>
+<p><a class="reference internal" href="KEActivities.html#findterms"><em>Find Terms</em></a></p>
+<blockquote>
+<div><p>The activity FindTerms finds terms in the text based on a thesaurus or meta-thesaurus.</p>
+<p>References static objects:</p>
+<ul class="simple">
+<li>Type <a class="reference internal" href="KEStaticObjects.html#wordsetstaticobject"><em>WordSet</em></a>, specify name by IgnoreTerms (Optional)</li>
+<li>Type <a class="reference internal" href="KEStaticObjects.html#attributesstaticobject"><em>Attributes</em></a>, specify name by TermPOSTags (Optional)</li>
+<li>Type <a class="reference internal" href="KEThesaurus.html#thesaurusstaticobject"><em>Thesaurus</em></a>, specify name by Thesaurus</li>
+</ul>
+</div></blockquote>
+<p><a class="reference internal" href="KEActivities.html#flagterms"><em>Flag Terms</em></a></p>
+<blockquote>
+<div><p>The activity FlagTerms flags terms based on concept id lists or term id lists.</p>
+<p>References static objects:</p>
+<ul class="simple">
+<li>Type <a class="reference internal" href="KEStaticObjects.html#wordsetstaticobject"><em>WordSet</em></a>, specify name by ConceptsToFlag (Optional)</li>
+<li>Type <a class="reference internal" href="KEStaticObjects.html#wordsetstaticobject"><em>WordSet</em></a>, specify name by TermsToFlag (Optional)</li>
+</ul>
+</div></blockquote>
+<p><a class="reference internal" href="KEActivities.html#hidepatterns"><em>Hide Patterns</em></a></p>
+<blockquote>
+<div>The HidePatterns activity adds EmptyExpansion annotations to the annotation storage for TokenPatterns of certain types, effectively hiding the annotated regions of text from further inspection by activities that are sensitive to this type of hiding, for instance FindTerms.</div></blockquote>
+<p><a class="reference internal" href="KEActivities.html#makefingerprint"><em>Make Fingerprint</em></a></p>
+<blockquote>
+<div><p>The activity MakeFingerprint aggregates found terms of a certain thesaurus to a concept fingerprint.</p>
+<p>References static objects:</p>
+<ul class="simple">
+<li>Type <em class="xref std std-ref">StringMap</em>, specify name by ConceptNameTable (Optional)</li>
+<li>Type <a class="reference internal" href="KEStaticObjects.html#conceptweightspersectionstaticobject"><em>ConceptWeightsPerSection</em></a>, specify name by ConceptWeightsDefinition (Optional)</li>
+</ul>
+</div></blockquote>
+<p><a class="reference internal" href="KEActivities.html#markupwords"><em>Markup Words</em></a></p>
+<blockquote>
+<div><p>MarkupWords adds flags to words contained in a specified WordSet.</p>
+<p>References static objects:</p>
+<ul class="simple">
+<li>Type <a class="reference internal" href="KEStaticObjects.html#wordsetstaticobject"><em>WordSet</em></a>, specify name by WordSetName</li>
+</ul>
+</div></blockquote>
+<p><a class="reference internal" href="KEActivities.html#multinormalize"><em>Multi Normalize</em></a></p>
+<blockquote>
+<div><p>The multi-normalize activity inserts MultiTokenWord annotations for known multi-word units.</p>
+<p>References static objects:</p>
+<ul class="simple">
+<li>Type <a class="reference internal" href="KEStaticObjects.html#multinormalizerstaticobject"><em>MultiNormalizer</em></a>, specify name by MultiNormalizer</li>
+</ul>
+</div></blockquote>
+<p><a class="reference internal" href="KEActivities.html#normalize"><em>Normalize</em></a></p>
+<blockquote>
+<div><p>Normalize activity</p>
+<p>References static objects:</p>
+<ul class="simple">
+<li>Type <a class="reference internal" href="KEStaticObjects.html#normalizerstaticobject"><em>Normalizer</em></a>, specify name by Normalizer</li>
+</ul>
+</div></blockquote>
+<p><a class="reference internal" href="KEActivities.html#tagpartsofspeech"><em>Tag Parts Of Speech</em></a></p>
+<blockquote>
+<div><p>TagPartsOfSpeech activity can perform part-of-speech tagging with both Beam and Viterbi engine</p>
+<p>References static objects:</p>
+<ul class="simple">
+<li>Type <a class="reference internal" href="KEStaticObjects.html#languagemodelstaticobject"><em>LanguageModel</em></a>, specify name by Model</li>
+<li>Type <em class="xref std std-ref">TokenPatternToTagProbabilityDistribution</em>, specify name by TokenPatternTagProbabilities (Optional)</li>
+</ul>
+</div></blockquote>
+<p><a class="reference internal" href="KEActivities.html#tokenize"><em>Tokenize</em></a></p>
+<blockquote>
+<div><p>The Tokenize activity splits the text in Tokens, and identifies the Words; that is, for non-whitespace tokens, base Word forms are also inserted.</p>
+<p>References static objects:</p>
+<ul class="simple">
+<li>Type <a class="reference internal" href="KEStaticObjects.html#tokenizerstaticobject"><em>Tokenizer</em></a>, specify name by Tokenizer</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="activities-grouped">
+<h2>Activities (grouped)<a class="headerlink" href="#activities-grouped" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="text-segmentation">
+<h3>Text segmentation<a class="headerlink" href="#text-segmentation" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference internal" href="KEActivities.html#tokenize"><em>Tokenize</em></a></li>
+<li><a class="reference internal" href="KEActivities.html#detectsentences"><em>Detect Sentences</em></a></li>
+</ul>
+</div>
+<div class="section" id="alternative-text-readings">
+<h3>Alternative text readings<a class="headerlink" href="#alternative-text-readings" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference internal" href="KEActivities.html#addnoncapitalalternatives"><em>Add Non Capital Alternatives</em></a></li>
+<li><a class="reference internal" href="KEActivities.html#dehyphenate"><em>Dehyphenate</em></a></li>
+<li><a class="reference internal" href="KEActivities.html#expandabbreviations"><em>Expand Abbreviations</em></a></li>
+<li><a class="reference internal" href="KEActivities.html#expandconceptcoordinations"><em>Expand Concept Coordinations</em></a></li>
+<li><a class="reference internal" href="KEActivities.html#expandcoordinations"><em>Expand Coordinations</em></a></li>
+</ul>
+</div>
+<div class="section" id="normalization">
+<h3>Normalization<a class="headerlink" href="#normalization" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference internal" href="KEActivities.html#multinormalize"><em>Multi Normalize</em></a></li>
+<li><a class="reference internal" href="KEActivities.html#normalize"><em>Normalize</em></a></li>
+</ul>
+</div>
+<div class="section" id="term-finding">
+<h3>Term finding<a class="headerlink" href="#term-finding" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference internal" href="KEActivities.html#hidepatterns"><em>Hide Patterns</em></a></li>
+<li><a class="reference internal" href="KEActivities.html#findterms"><em>Find Terms</em></a></li>
+<li><a class="reference internal" href="KEActivities.html#makefingerprint"><em>Make Fingerprint</em></a></li>
+<li><a class="reference internal" href="KEActivities.html#annotateterms"><em>Annotate Terms</em></a></li>
+<li><a class="reference internal" href="KEActivities.html#annotatehomonyms"><em>Annotate Homonyms</em></a></li>
+</ul>
+</div>
+<div class="section" id="disambiguation">
+<h3>Disambiguation<a class="headerlink" href="#disambiguation" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference internal" href="KEActivities.html#annotateterms"><em>Annotate Terms</em></a></li>
+<li><a class="reference internal" href="KEActivities.html#flagterms"><em>Flag Terms</em></a></li>
+<li><a class="reference internal" href="KEActivities.html#annotatehomonyms"><em>Annotate Homonyms</em></a></li>
+<li><a class="reference internal" href="KEActivities.html#distributetermflags"><em>Distribute Term Flags</em></a></li>
+</ul>
+</div>
+<div class="section" id="pattern-annotation">
+<h3>Pattern annotation<a class="headerlink" href="#pattern-annotation" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference internal" href="KEActivities.html#annotatepatterns"><em>Annotate Patterns</em></a></li>
+<li><a class="reference internal" href="KEActivities.html#annotatepospatterns"><em>Annotate P O S Patterns</em></a></li>
+<li><a class="reference internal" href="KEActivities.html#annotatetokenrangepatterns"><em>Annotate Token Range Patterns</em></a></li>
+<li><a class="reference internal" href="KEActivities.html#annotatetokenranges"><em>Annotate Token Ranges</em></a></li>
+</ul>
+</div>
+<div class="section" id="linguistic-annotations">
+<h3>Linguistic annotations<a class="headerlink" href="#linguistic-annotations" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference internal" href="KEActivities.html#tagpartsofspeech"><em>Tag Parts Of Speech</em></a></li>
+<li><a class="reference internal" href="KEActivities.html#annotatepospatterns"><em>Annotate P O S Patterns</em></a></li>
+</ul>
+</div>
+<div class="section" id="specific-patterns">
+<h3>Specific patterns<a class="headerlink" href="#specific-patterns" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference internal" href="KEActivities.html#annotatepatterns"><em>Annotate Patterns</em></a></li>
+<li><a class="reference internal" href="KEActivities.html#detectabbreviations"><em>Detect Abbreviations</em></a></li>
+<li><a class="reference internal" href="KEActivities.html#detectcapitalisationregions"><em>Detect Capitalisation Regions</em></a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Activity Index</a><ul>
+<li><a class="reference internal" href="#activities-alphabetical">Activities (alphabetical)</a></li>
+<li><a class="reference internal" href="#activities-grouped">Activities (grouped)</a><ul>
+<li><a class="reference internal" href="#text-segmentation">Text segmentation</a></li>
+<li><a class="reference internal" href="#alternative-text-readings">Alternative text readings</a></li>
+<li><a class="reference internal" href="#normalization">Normalization</a></li>
+<li><a class="reference internal" href="#term-finding">Term finding</a></li>
+<li><a class="reference internal" href="#disambiguation">Disambiguation</a></li>
+<li><a class="reference internal" href="#pattern-annotation">Pattern annotation</a></li>
+<li><a class="reference internal" href="#linguistic-annotations">Linguistic annotations</a></li>
+<li><a class="reference internal" href="#specific-patterns">Specific patterns</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="KEActivities.html"
+                        title="previous chapter">Activities</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="KEWorkflowList.html"
+                        title="next chapter">Workflow Lists</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="KEWorkflowList.html" title="Workflow Lists"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="KEActivities.html" title="Activities"
+             >previous</a> |</li>
+        <li><a href="index.html">Elsevier Fingerprint Engine 7.6.0.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Elsevier.
+      Last updated on Apr 01, 2015.
+    </div>
+  </body>
+</html>

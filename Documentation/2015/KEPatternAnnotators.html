@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Text Pattern Annotators &mdash; Elsevier Fingerprint Engine 7.6.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/Elsevier.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '7.6.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="shortcut icon" href="_static/QuarterCircle.ico"/>
+    <link rel="top" title="Elsevier Fingerprint Engine 7.6.0.0 documentation" href="index.html" />
+    <link rel="next" title="Disambiguation" href="KEDisambiguation.html" />
+    <link rel="prev" title="Workflow control by Language and Metadata" href="KEDependentProcessing.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="KEDisambiguation.html" title="Disambiguation"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="KEDependentProcessing.html" title="Workflow control by Language and Metadata"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Elsevier Fingerprint Engine 7.6.0.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="text-pattern-annotators">
+<span id="patternannotatorstaticobject"></span><h1>Text Pattern Annotators<a class="headerlink" href="#text-pattern-annotators" title="Permalink to this headline">¶</a></h1>
+<p>From one point of view, we can distinguish, in the Elsevier Fingerprint Engine, two methods of annotation: purely textual annotations and annotations
+based on other annotations. In the same vein there are two types of pattern matchers: <em class="xref std std-ref">annotation pattern matchers</em> and text pattern matchers. This document outlines the capabilities and configuration of the various text-based pattern matchers.</p>
+<p>The Elsevier Fingerprint Engine provides several means of annotating textual patterns:</p>
+<ul class="simple">
+<li>the <a class="reference internal" href="#regextokenpatterns">RegexTokenPatterns</a>,</li>
+<li>the <a class="reference internal" href="#namedregexpatterns">NamedRegexPatterns</a>,</li>
+<li>the <a class="reference internal" href="#regextokenpatternmatcher">RegexTokenPatternMatcher</a>,</li>
+<li>the <a class="reference internal" href="#regexnamedtokenpatternmatcher">RegexNamedTokenPatternMatcher</a>,</li>
+<li>the <a class="reference internal" href="#fixedpatternannotator">FixedPatternAnnotator</a>,</li>
+<li>the <a class="reference internal" href="#fixedexpressionannotator">FixedExpressionAnnotator</a></li>
+</ul>
+<p>Each of them must be referenced by an <a class="reference internal" href="KEActivities.html#annotatepatterns"><em>AnnotatePatterns</em></a> activity in order to be put to use.</p>
+<span class="target" id="index-0"></span><div class="section" id="regextokenpatterns">
+<span id="index-1"></span><span id="id1"></span><h2>RegexTokenPatterns<a class="headerlink" href="#regextokenpatterns" title="Permalink to this headline">¶</a></h2>
+<p>In the static objects we can define a pattern matcher that scans for the occurrence of regular expressions in the input text.
+The RegexTokenPatterns static object does exactly that.
+The <tt class="docutils literal"><span class="pre">RegexTokenPatterns</span></tt> object can be used by the <a class="reference internal" href="KEActivities.html#annotatepatterns"><em>Annotate Pattern</em></a> activity.
+In its definition, it needs a regular expression pattern <tt class="docutils literal"><span class="pre">Pattern</span></tt> attribute and a <tt class="docutils literal"><span class="pre">Name</span></tt> attribute (assigned to inserted
+TokenPatterns in output).
+Defining patterns can be a very difficult process (particularly, debugging them).
+For that reason, we introduced a syntax to enable the user to split a complex pattern into parts,
+which is defined <a class="reference internal" href="#definingcomplexpatterns"><em>below</em></a>.</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;NamedObjects&gt;</span>
+    <span class="nt">&lt;m:RegexTokenPatterns</span>   <span class="na">xaml:Key=</span><span class="s">&quot;EmailAddresses&quot;</span>
+                            <span class="na">Pattern=</span><span class="s">&quot;\b\w+@(\w+\.)+\w+\b&quot;</span>
+                            <span class="na">Name=</span><span class="s">&quot;EmailAddress&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/NamedObjects&gt;</span>
+</pre></div>
+</div>
+<span class="target" id="index-2"></span></div>
+<div class="section" id="namedregexpatterns">
+<span id="index-3"></span><span id="id2"></span><h2>NamedRegexPatterns<a class="headerlink" href="#namedregexpatterns" title="Permalink to this headline">¶</a></h2>
+<p>The simple <a class="reference internal" href="#regextokenpatterns"><em>Regular expression text matcher</em></a> matches a single pattern only.
+The downside of that is that it is not very efficient.
+We may want to define a regular expression that scans for different patterns of data in one single go,
+and outputs TokenPatterns with names depending on the pattern matches.
+The solution to that is in <em>named groups</em>.
+The C# regular expression syntax allows for naming matching groups as follows:</p>
+<div class="highlight-csharp"><div class="highlight"><pre><span class="p">(?&lt;</span><span class="n">date</span><span class="p">&gt;[</span><span class="m">0</span><span class="p">-</span><span class="m">9</span><span class="p">]{</span><span class="m">2</span><span class="p">}-[</span><span class="m">0</span><span class="p">-</span><span class="m">9</span><span class="p">]{</span><span class="m">2</span><span class="p">}-[</span><span class="m">12</span><span class="p">][</span><span class="m">0</span><span class="p">-</span><span class="m">9</span><span class="p">]{</span><span class="m">3</span><span class="p">})</span>
+</pre></div>
+</div>
+<p>The NamedRegexPatterns objects use the names in the regular expression pattern defined,
+and outputs tokenpatterns accordingly.
+The example regular expression below outputs, if it matches, either a &#8216;figure&#8217; string
+(e.g. &#8220;Fig. 1&#8221;) or a citation (e.g. &#8220;M. McCauley (2000)&#8221; or &#8220;A.N. Chomsky (1965)&#8221;).
+Note that non-capturing groups are explicitly marked with <tt class="docutils literal"><span class="pre">(?:</span></tt> - if that were not done,
+the output would contain many useless token patterns for these groups.</p>
+<p>Defining patterns can be a very difficult process (particularly, debugging them).
+For that reason, we introduced a syntax to enable the user to split a complex pattern into parts,
+which is defined <a class="reference internal" href="#definingcomplexpatterns"><em>below</em></a>.</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;NamedObjects&gt;</span>
+    <span class="nt">&lt;m:NamedRegexPatterns</span>   <span class="na">xaml:Key=</span><span class="s">&quot;EmailAddresses&quot;</span> <span class="nt">&gt;</span>
+        <span class="nt">&lt;NamedRegexPatterns.Pattern&gt;</span>
+            <span class="cp">&lt;![CDATA[(?&lt;Figure&gt;Fig\. [0-9]+)|(?&lt;Citation&gt;(?:[A-Z]\.)+</span>
+<span class="cp">            (?:(?:Mc)|(?:O&#39;))?[A-Z][a-z]+ \([1-2][0-9]{3}\))]]&gt;</span>
+        <span class="nt">&lt;/NamedRegexPatterns.Pattern&gt;</span>
+    <span class="nt">&lt;/m:NamedRegexPatterns&gt;</span>
+<span class="nt">&lt;/NamedObjects&gt;</span>
+</pre></div>
+</div>
+<div class="section" id="defining-complex-regular-expression-patterns">
+<span id="definingcomplexpatterns"></span><h3>Defining Complex Regular Expression Patterns<a class="headerlink" href="#defining-complex-regular-expression-patterns" title="Permalink to this headline">¶</a></h3>
+<p>Defining regular expression patterns can be a very difficult process (particularly, debugging them).
+For that reason, we introduced a syntax to enable the user to split a complex pattern into parts.
+We allow for the definition of <tt class="docutils literal"><span class="pre">Snippets</span></tt> that each define a regular expression pattern matching
+a meaningful unit.
+These snippets are defined as a member of the Regular-Expression based static object, either
+<tt class="docutils literal"><span class="pre">NamedRegexPatterns</span></tt> or <tt class="docutils literal"><span class="pre">RegexTokenPatterns</span></tt>.</p>
+<p>The pattern matcher member <tt class="docutils literal"><span class="pre">Snippets</span></tt> is a dictionary of regular expression portions.
+The type of this dictionary is from string - to string
+Each entry in this dictionary consists of a <em>Key</em>-<em>Value</em> pair, defined as
+<tt class="docutils literal"><span class="pre">&lt;c:string</span> <span class="pre">xaml:Key=&quot;...&quot;&gt;Value&lt;/c:string&gt;</span></tt>.
+Each dictionary entry defines a regular expression portion by name.
+The Xaml-syntax for defining a Snippets-member like this is as follows:</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;m:NamedRegexPatterns</span> <span class="na">Pattern=</span><span class="s">&quot;(?&amp;lt;Name&amp;gt;`ForwardFullName`|`ReverseFullName`)&quot;</span>
+                 <span class="na">xaml:Key=</span><span class="s">&quot;IgnorePatterns&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;m:NamedRegexPatterns.Snippets&gt;</span>
+        <span class="nt">&lt;m:Snippets&gt;</span>
+            <span class="nt">&lt;c:String</span> <span class="na">xaml:Key=</span><span class="s">&quot;4digits&quot;</span><span class="nt">&gt;</span>[0-9]{4}<span class="nt">&lt;/c:String&gt;</span>
+        <span class="nt">&lt;/m:Snippets&gt;</span>
+    <span class="nt">&lt;/m:NamedRegexPatterns.Snippets&gt;</span>
+<span class="nt">&lt;/m:NamedRegexPatterns&gt;</span>
+</pre></div>
+</div>
+<p>Snippets are referenced in the <tt class="docutils literal"><span class="pre">Pattern</span></tt> variable by their name surrounded with back-ticks
+(reverse quotes). Snippets can be defined in terms of one another, but recursive definitions
+are illegal. Definitions may reference one another to arbitrary depth but an exception will be
+thrown if a recursion is detected.
+In order to facilitate debugging and error detection, it is required that each snippet must be
+a legal regular expression on its own.</p>
+<p>The MeSH-sample configuration delivered with the Elsevier Fingerprint Engine sample configurations
+contains an elaborate definition of (safe) citation patterns as found in scientific literature.
+As an instructive example a part of that definition is repeated here.</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;m:NamedRegexPatterns</span> <span class="na">Pattern=</span><span class="s">&quot;(?&amp;lt;Name&amp;gt;`ForwardFullName`|`ReverseFullName`)&quot;</span>
+                 <span class="na">xaml:Key=</span><span class="s">&quot;IgnorePatterns&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;m:NamedRegexPatterns.Snippets&gt;</span>
+        <span class="nt">&lt;m:Snippets&gt;</span>
+            <span class="nt">&lt;c:String</span> <span class="na">xaml:Key=</span><span class="s">&quot;Surname&quot;</span><span class="nt">&gt;</span>(?:(?:Ma?c)|(?:O\&#39;))?\p{Lu}\p{Ll}+(?:-\p{Lu}\p{Ll}+)?<span class="nt">&lt;/c:String&gt;</span>
+            <span class="nt">&lt;c:String</span> <span class="na">xaml:Key=</span><span class="s">&quot;ReverseFullName&quot;</span><span class="nt">&gt;</span>`Surname`,? `Initials`<span class="nt">&lt;/c:String&gt;</span>
+            <span class="nt">&lt;c:String</span> <span class="na">xaml:Key=</span><span class="s">&quot;ForwardFullName&quot;</span><span class="nt">&gt;</span>`Dotted` `Surname`<span class="nt">&lt;/c:String&gt;</span>
+            <span class="nt">&lt;c:String</span> <span class="na">xaml:Key=</span><span class="s">&quot;Initials&quot;</span><span class="nt">&gt;</span>(?:`Dotted`|[A-Z]{1,3})<span class="nt">&lt;/c:String&gt;</span>
+            <span class="nt">&lt;c:String</span> <span class="na">xaml:Key=</span><span class="s">&quot;Dotted&quot;</span><span class="nt">&gt;</span>(?:(?:[A-Z]\. ?){1,3})<span class="nt">&lt;/c:String&gt;</span>
+        <span class="nt">&lt;/m:Snippets&gt;</span>
+    <span class="nt">&lt;/m:NamedRegexPatterns.Snippets&gt;</span>
+<span class="nt">&lt;/m:NamedRegexPatterns&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="regextokenpatternmatcher">
+<span id="id3"></span><h2>RegexTokenPatternMatcher<a class="headerlink" href="#regextokenpatternmatcher" title="Permalink to this headline">¶</a></h2>
+<p>TODO</p>
+</div>
+<div class="section" id="regexnamedtokenpatternmatcher">
+<span id="id4"></span><h2>RegexNamedTokenPatternMatcher<a class="headerlink" href="#regexnamedtokenpatternmatcher" title="Permalink to this headline">¶</a></h2>
+<p>TODO</p>
+<span class="target" id="index-4"></span></div>
+<div class="section" id="fixedpatternannotator">
+<span id="index-5"></span><span id="id5"></span><h2>FixedPatternAnnotator<a class="headerlink" href="#fixedpatternannotator" title="Permalink to this headline">¶</a></h2>
+<p>The FixedPatternAnnotator lives in the namespace <tt class="docutils literal"><span class="pre">xmlns:e=&quot;clr-namespace:TACO.Core.EntityAnnotator;assembly=TACO.Core&quot;</span></tt> which
+must be mentioned in the XML pre-amble of the Runtime Configuration.
+The annotator offers the functionality to annotate a number of pre-defined patterns, as well as matching a pre-set, fixed list of simple
+text strings as defined in an external data source.</p>
+<span class="target" id="index-6"></span><p id="index-7">The following patterns can be recognized:</p>
+<ul class="simple">
+<li>Email: simple email addresses of the type <em>john&#64;doe.com</em></li>
+<li>Pagination: simple number-number patterns of the type <em>19-29</em></li>
+<li>Roman: roman numbers (IV, vii, MCMLXXXVI)</li>
+<li>Words: words or string expressions defined in an external <a class="reference internal" href="KEStaticObjects.html#wordsetstaticobject"><em>Wordset</em></a> or file, defined by <tt class="docutils literal"><span class="pre">FilePath</span></tt> in the configuration</li>
+</ul>
+<p>The type of pattern matcher must be defined in the <tt class="docutils literal"><span class="pre">Pattern</span></tt> field on the Xaml configuration.
+If <tt class="docutils literal"><span class="pre">Words</span></tt> is selected, additionally either a <tt class="docutils literal"><span class="pre">Words</span></tt> field must be defined [referring to <a class="reference internal" href="KEStaticObjects.html#wordsetstaticobject"><em>Wordset</em></a>] or <tt class="docutils literal"><span class="pre">FilePath</span></tt>.
+For all patterns a score-factor can be defined that assigns a score to each output <a class="reference internal" href="KEAnnotationTypes.html#tokenpatternannotationtype"><em>TokenPattern</em></a> annotation.</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;NamedObjects&gt;</span>
+    <span class="c">&lt;!-- fixed pattern annotator to detect email addresses --&gt;</span>
+    <span class="nt">&lt;e:FixedPatternAnnotator</span> <span class="na">xaml:Key=</span><span class="s">&quot;Email&quot;</span> <span class="na">Pattern=</span><span class="s">&quot;Email&quot;</span> <span class="na">Name=</span><span class="s">&quot;email&quot;</span> <span class="na">Factor=</span><span class="s">&quot;10&quot;</span> <span class="nt">/&gt;</span>
+
+    <span class="c">&lt;!-- fixed pattern annotator to detect copyright sequences --&gt;</span>
+    <span class="nt">&lt;e:FixedPatternAnnotator</span> <span class="na">xaml:Key=</span><span class="s">&quot;CopyrightPatterns&quot;</span> <span class="na">Tokenizer=</span><span class="s">&quot;en&quot;</span>
+                    <span class="na">Pattern=</span><span class="s">&quot;Words&quot;</span> <span class="na">FilePath=</span><span class="s">&quot;CopyrightPatterns.zip&quot;</span>
+                    <span class="na">Name=</span><span class="s">&quot;copyright&quot;</span> <span class="na">Factor=</span><span class="s">&quot;10&quot;</span> <span class="nt">&gt;</span>
+        <span class="nt">&lt;e:FixedPatternAnnotator.Macros&gt;</span>
+            <span class="nt">&lt;e:Macros&gt;</span>
+                <span class="nt">&lt;e:Macro</span> <span class="na">PlaceHolder=</span><span class="s">&quot;9999&quot;</span> <span class="na">Type=</span><span class="s">&quot;Year&quot;</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;/e:Macros&gt;</span>
+        <span class="nt">&lt;/e:FixedPatternAnnotator.Macros&gt;</span>
+    <span class="nt">&lt;/e:FixedPatternAnnotator&gt;</span>
+<span class="nt">&lt;/NamedObjects&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="fixedexpressionannotator">
+<span id="id6"></span><h2>FixedExpressionAnnotator<a class="headerlink" href="#fixedexpressionannotator" title="Permalink to this headline">¶</a></h2>
+<p>TODO</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Text Pattern Annotators</a><ul>
+<li><a class="reference internal" href="#regextokenpatterns">RegexTokenPatterns</a></li>
+<li><a class="reference internal" href="#namedregexpatterns">NamedRegexPatterns</a><ul>
+<li><a class="reference internal" href="#defining-complex-regular-expression-patterns">Defining Complex Regular Expression Patterns</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#regextokenpatternmatcher">RegexTokenPatternMatcher</a></li>
+<li><a class="reference internal" href="#regexnamedtokenpatternmatcher">RegexNamedTokenPatternMatcher</a></li>
+<li><a class="reference internal" href="#fixedpatternannotator">FixedPatternAnnotator</a></li>
+<li><a class="reference internal" href="#fixedexpressionannotator">FixedExpressionAnnotator</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="KEDependentProcessing.html"
+                        title="previous chapter">Workflow control by Language and Metadata</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="KEDisambiguation.html"
+                        title="next chapter">Disambiguation</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="KEDisambiguation.html" title="Disambiguation"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="KEDependentProcessing.html" title="Workflow control by Language and Metadata"
+             >previous</a> |</li>
+        <li><a href="index.html">Elsevier Fingerprint Engine 7.6.0.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Elsevier.
+      Last updated on Apr 01, 2015.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Querying the Elsevier Fingerprint Engine &mdash; Elsevier Fingerprint Engine 7.6.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/Elsevier.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '7.6.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="shortcut icon" href="_static/QuarterCircle.ico"/>
+    <link rel="top" title="Elsevier Fingerprint Engine 7.6.0.0 documentation" href="index.html" />
+    <link rel="next" title="Managing the Elsevier Fingerprint Engine" href="KEManagement.html" />
+    <link rel="prev" title="Matching Expressions" href="KEExpressions.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="KEManagement.html" title="Managing the Elsevier Fingerprint Engine"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="KEExpressions.html" title="Matching Expressions"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Elsevier Fingerprint Engine 7.6.0.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="querying-the-cke">
+<h1>Querying the Elsevier Fingerprint Engine<a class="headerlink" href="#querying-the-cke" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="the-ke-query-handle">
+<span id="kequerying"></span><h2>The Fingerprint Engine query handle<a class="headerlink" href="#the-ke-query-handle" title="Permalink to this headline">¶</a></h2>
+<p>If a Fingerprint Engine instance has successfully been installed on a host machine (say, localhost),
+the Fingerprint Engine exposes several handles that can be called for information.</p>
+<p>The Fingerprint Engine provides text analysis services based on thesauri or controlled vocabularies.
+For external products, we may need access to two more types of information about Thesaurus concepts.
+Specifically, two queries are required:</p>
+<ul class="simple">
+<li>Concepts: a query to retrieve Concepts IDs and Names from the thesaurus</li>
+<li>Terms: a query to retrieve terms by prefix (-es)</li>
+<li>ConceptList: a query to retrieve all concepts <em>and</em> their semantic groups</li>
+<li>IgnoreConcepts: a query to retrieve all ignore concepts</li>
+<li>SuspiciousConcepts: a query to retrieve all suspicious concepts</li>
+</ul>
+<div class="section" id="rest-interface">
+<h3>REST Interface<a class="headerlink" href="#rest-interface" title="Permalink to this headline">¶</a></h3>
+<p>The data is accessed by a REST interface, implemented using WCF like the other Fingerprint Engine interfaces.
+A specialized handle called <tt class="docutils literal"><span class="pre">Query.svc</span></tt> deals with queries of different types.
+Currently <tt class="docutils literal"><span class="pre">Terms</span></tt>, <tt class="docutils literal"><span class="pre">Concepts</span></tt>, <tt class="docutils literal"><span class="pre">ConceptList</span></tt>, <tt class="docutils literal"><span class="pre">Hierarchy</span></tt>, <tt class="docutils literal"><span class="pre">IgnoreConcepts</span></tt> and <tt class="docutils literal"><span class="pre">SuspiciousConcepts</span></tt>
+queries have been implemented.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="37%" />
+<col width="63%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>Query for Search by Terms</td>
+<td>&lt;baseurl&gt;/Query.svc/Terms/{thesaurus}/{maxTerms}</td>
+</tr>
+<tr class="row-even"><td>Query for Concept Information</td>
+<td>&lt;baseurl&gt;/Query.svc/Concepts/{thesaurus}</td>
+</tr>
+<tr class="row-odd"><td>Query for Listing Concepts</td>
+<td>&lt;baseurl&gt;/Query.svc/ConceptList/{thesaurus}</td>
+</tr>
+<tr class="row-even"><td>Query for IgnoreConcepts</td>
+<td>&lt;baseurl&gt;/Query.svc/IgnoreConcepts/{thesaurus}</td>
+</tr>
+<tr class="row-odd"><td>Query for Hierarchy</td>
+<td>&lt;baseurl&gt;/Query.svc/Hierarchy/{thesaurus}</td>
+</tr>
+<tr class="row-even"><td>Query for Suspc. Concepts</td>
+<td>&lt;baseurl&gt;/Query.svc/SuspiciousConcepts/{thesaurus}</td>
+</tr>
+</tbody>
+</table>
+<p>For all services, input information is sent by the POST method.
+A piece of Sample client code is provided.</p>
+</div>
+</div>
+<div class="section" id="input">
+<h2>Input<a class="headerlink" href="#input" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="input-for-terms-query">
+<h3>Input for Terms query<a class="headerlink" href="#input-for-terms-query" title="Permalink to this headline">¶</a></h3>
+<p>This is a POST query - you must post the search term after the URL.
+The terms query will parse the input text as words, separated by whitespace. A minimum of three non-whitespace characters are required; if this requirement is not met, an error is returned. The maxTerms parameter [part of the URL] is parsed as an integer; if this is not a valid integer, an error is returned. Valid input strings are: &#8220;af mos&#8221;, &#8220;a b c&#8221;; invalid input strings are: &#8220;&#8221;, &#8220;a b&#8221; or &#8220;ab&#8221;. Control characters and other garbage are treated as whitespace and not reported.</p>
+<p>Example URL: <a class="reference external" href="https://fingerprintengine.ptgels.com/TACO7500/Query.svc/Terms/MeSH/20">https://fingerprintengine.ptgels.com/TACO7500/Query.svc/Terms/MeSH/20</a></p>
+<p>POSTing &#8216;blood&#8217;, you receive the return value:</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;Result&gt;</span>
+    <span class="nt">&lt;Concept</span> <span class="na">ID=</span><span class="s">&quot;17&quot;</span> <span class="na">Name=</span><span class="s">&quot;ABO Blood-Group System&quot;</span><span class="nt">&gt;&lt;Term&gt;</span>H Blood Group<span class="nt">&lt;/Term&gt;&lt;/Concept&gt;</span>
+    <span class="nt">&lt;Concept</span> <span class="na">ID=</span><span class="s">&quot;2669&quot;</span> <span class="na">Name=</span><span class="s">&quot;Blood&quot;</span><span class="nt">&gt;&lt;Term&gt;</span>Blood<span class="nt">&lt;/Term&gt;&lt;/Concept&gt;</span>
+    <span class="nt">&lt;Concept</span> <span class="na">ID=</span><span class="s">&quot;2673&quot;</span> <span class="na">Name=</span><span class="s">&quot;Blood Banks&quot;</span><span class="nt">&gt;&lt;Term&gt;</span>Blood Banks<span class="nt">&lt;/Term&gt;&lt;/Concept&gt;</span>
+    <span class="nt">&lt;Concept</span> <span class="na">ID=</span><span class="s">&quot;2677&quot;</span> <span class="na">Name=</span><span class="s">&quot;Blood Cells&quot;</span><span class="nt">&gt;&lt;Term&gt;</span>Blood Cells<span class="nt">&lt;/Term&gt;&lt;/Concept&gt;</span>
+    ...
+    <span class="nt">&lt;Query&gt;</span>blood<span class="nt">&lt;/Query&gt;</span>
+<span class="nt">&lt;/Result&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="input-for-concepts-query">
+<h3>Input for Concepts query<a class="headerlink" href="#input-for-concepts-query" title="Permalink to this headline">¶</a></h3>
+<p>The concepts query treats the input text as a comma-separated list of integers.
+If the parsing of the input text fails somewhere, this is reported.</p>
+<p>Example URL: <a class="reference external" href="https://fingerprintengine.ptgels.com/TACO7500/Query.svc/Concepts/MeSH">https://fingerprintengine.ptgels.com/TACO7500/Query.svc/Concepts/MeSH</a></p>
+<p>POSTing &#8216;17,2669,2673&#8217;, you receive the return value:</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;Result&gt;</span>
+    <span class="nt">&lt;Concept</span> <span class="na">ID=</span><span class="s">&quot;17&quot;</span> <span class="na">Name=</span><span class="s">&quot;ABO Blood-Group System&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;Concept</span> <span class="na">ID=</span><span class="s">&quot;2669&quot;</span> <span class="na">Name=</span><span class="s">&quot;Blood&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;Concept</span> <span class="na">ID=</span><span class="s">&quot;2673&quot;</span> <span class="na">Name=</span><span class="s">&quot;Blood Banks&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;Query&gt;</span>17,2669,2673<span class="nt">&lt;/Query&gt;</span>
+<span class="nt">&lt;/Result&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="output-for-queries">
+<h2>Output for queries<a class="headerlink" href="#output-for-queries" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="return-xml-format">
+<h3>Return Xml format<a class="headerlink" href="#return-xml-format" title="Permalink to this headline">¶</a></h3>
+<p>All information returned is in sane Xml format. The structure of the return value for all queries is</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;Result&gt;</span>
+    <span class="nt">&lt;Error&gt;</span> [Error message] <span class="nt">&lt;/Error&gt;</span>*
+    <span class="nt">&lt;ReturnedItem</span> <span class="nt">/&gt;</span>+
+    <span class="nt">&lt;Query&gt;</span> [ the original query text [POSTed] <span class="nt">&lt;/Query&gt;</span>
+<span class="nt">&lt;/Result&gt;</span>
+</pre></div>
+</div>
+<p>This means that the top node is always <tt class="docutils literal"><span class="pre">Result</span></tt>. There may be <tt class="docutils literal"><span class="pre">&lt;Error&gt;</span></tt> nodes containing a message; if so, the results will not necessarily be valid. There will always be an embedded node <tt class="docutils literal"><span class="pre">&lt;Query/&gt;</span></tt> containing the originally POSTed query.
+The tag and contents of the ReturnedItem nodes varies according to the query.</p>
+</div>
+<div class="section" id="terms-query-result">
+<h3>Terms query result<a class="headerlink" href="#terms-query-result" title="Permalink to this headline">¶</a></h3>
+<p>The terms query returns the concepts associated with a search string. All words in the search string must match a word in a term associated with a concept in the thesaurus. Casing is ignored. So, &#8220;fi fl&#8221; as well as &#8220;FI FL&#8221; will match &#8220;Fire Fly&#8221;, etc. The words matched will be the <em>normalized</em> words, so &#8220;fi fli&#8221; will not match &#8220;Fire Flies&#8221; - because &#8220;Fire Flies&#8221; gets normalized to &#8220;fire fly&#8221;.
+Multiple words in the search term must match multiple words in the term.
+So, &#8220;fi fi&#8221; can match &#8220;fiscal fidelity&#8221; but not &#8220;fiscal&#8221;.
+Multiple tokens in the input must match multiple words in the matched terms!</p>
+<p>The result contains of a number (maximally &lt;maxResults&gt;) of nodes of the following format, replacing the &lt;ReturnedItem /&gt; placeholder as outlined above:</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;Concept</span> <span class="na">Name=</span><span class="s">&quot;XYZ&quot;</span> <span class="na">ID=</span><span class="s">&quot;123&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;Term&gt;</span>[term text]<span class="nt">&lt;/Term&gt;</span>+
+<span class="nt">&lt;/Concept&gt;</span>
+</pre></div>
+</div>
+<p>All concepts associated with terms found are returned. If multiple terms of a single concept match the search query, all of these are returned.</p>
+</div>
+<div class="section" id="concepts-query-result">
+<h3>Concepts query result<a class="headerlink" href="#concepts-query-result" title="Permalink to this headline">¶</a></h3>
+<p>The concepts query result contains concept nodes of the following format, containing names for the ids present in the query.</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;Concept</span> <span class="na">ID=</span><span class="s">&quot;&lt;integer id&gt;&quot;</span> <span class="na">Name=</span><span class="s">&quot;Concept display name&quot;</span> <span class="nt">/&gt;</span>
+</pre></div>
+</div>
+<p>Missing concept IDs [queried but not present in the thesaurus] will be reported in an error message.</p>
+</div>
+<div class="section" id="client-code">
+<h3>Client code<a class="headerlink" href="#client-code" title="Permalink to this headline">¶</a></h3>
+<p>Elsevier provides client code that can</p>
+<ul class="simple">
+<li>Send queries</li>
+<li>Translate returned Xml into C# objects</li>
+</ul>
+<p>We shall define a class <tt class="docutils literal"><span class="pre">Concept</span></tt> that may contain terms, but at least contains the members ConceptID and DisplayName.
+The returned objects will look like:
+*       For Terms: List&lt;Concept&gt;
+*       For Concepts: List&lt;Concept&gt;
+The client code is made available as a library (<tt class="docutils literal"><span class="pre">TACO.Client.dll</span></tt>).</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Querying the Elsevier Fingerprint Engine</a><ul>
+<li><a class="reference internal" href="#the-ke-query-handle">The Fingerprint Engine query handle</a><ul>
+<li><a class="reference internal" href="#rest-interface">REST Interface</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#input">Input</a><ul>
+<li><a class="reference internal" href="#input-for-terms-query">Input for Terms query</a></li>
+<li><a class="reference internal" href="#input-for-concepts-query">Input for Concepts query</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#output-for-queries">Output for queries</a><ul>
+<li><a class="reference internal" href="#return-xml-format">Return Xml format</a></li>
+<li><a class="reference internal" href="#terms-query-result">Terms query result</a></li>
+<li><a class="reference internal" href="#concepts-query-result">Concepts query result</a></li>
+<li><a class="reference internal" href="#client-code">Client code</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="KEExpressions.html"
+                        title="previous chapter">Matching Expressions</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="KEManagement.html"
+                        title="next chapter">Managing the Elsevier Fingerprint Engine</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="KEManagement.html" title="Managing the Elsevier Fingerprint Engine"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="KEExpressions.html" title="Matching Expressions"
+             >previous</a> |</li>
+        <li><a href="index.html">Elsevier Fingerprint Engine 7.6.0.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Elsevier.
+      Last updated on Apr 01, 2015.
+    </div>
+  </body>
+</html>

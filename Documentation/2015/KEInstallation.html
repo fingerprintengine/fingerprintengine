@@ -1,0 +1,315 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Installing the Elsevier Fingerprint Engine &mdash; Elsevier Fingerprint Engine 7.6.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/Elsevier.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '7.6.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="shortcut icon" href="_static/QuarterCircle.ico"/>
+    <link rel="top" title="Elsevier Fingerprint Engine 7.6.0.0 documentation" href="index.html" />
+    <link rel="next" title="Configuring the Elsevier Fingerprint Engine" href="KEConfiguration.html" />
+    <link rel="prev" title="Concepts of the Elsevier Fingerprint Engine" href="KEConcepts.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="KEConfiguration.html" title="Configuring the Elsevier Fingerprint Engine"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="KEConcepts.html" title="Concepts of the Elsevier Fingerprint Engine"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Elsevier Fingerprint Engine 7.6.0.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="installing-the-cke">
+<span id="keinstallation"></span><h1>Installing the Elsevier Fingerprint Engine<a class="headerlink" href="#installing-the-cke" title="Permalink to this headline">¶</a></h1>
+<span class="target" id="keinstallation-installers"></span><div class="section" id="installers-and-deliverables">
+<span id="index-0"></span><h2>Installers and deliverables<a class="headerlink" href="#installers-and-deliverables" title="Permalink to this headline">¶</a></h2>
+<p>The following installers and deliverables are available for the Elsevier Fingerprint Engine.</p>
+<ul class="simple" id="index-1">
+<li><em>EFEDocumentation.exe</em>
+This installer installs the documentation (in HTML and PDF format) for installing, configuring and using the Elsevier Fingerprint Engine.
+It also contains sample code in C#  showing how to call the Elsevier Fingerprint Engine.</li>
+</ul>
+<ul class="simple" id="index-2">
+<li><em>EFEInstallerIIS.exe</em>
+This installs a Elsevier Fingerprint Engine instance with a number of workflows.</li>
+</ul>
+<ul class="simple" id="index-3">
+<li><em>EFEThesaurus</em>.exe*
+More or less apart from the core Fingerprint Engine installation, installers may be delivered that copy thesauri backups.
+For instance, a MeSH thesaurus can be delivered together with MeSH-related workflow configurations.
+Usually, the installed files are in MS SQL Server backup format that need to be restored into SQL Server using,
+for instance, the SQL Server Management Console.</li>
+</ul>
+<p>Multiple instances of the Fingerprint Engine can be installed next to one another by running the EFEInstallerIIS.exe multiple times.
+Note then that you do need to assign the various instances different names. This is a part of the install process, where the default name is <cite>taco</cite>.</p>
+<p>Installing multiple instances is recommended if you want to be able to load / unload Fingerprint Engine workflows separately.
+In a scenario where you work with multiple indexing processes, e.g. some using thesauri, some using POS Tagging, it
+is recommended to install multiple instances. These instances are best distributed over separate IIS Application Pools,
+which gives full control over the applications.
+When you use larger thesauri, starting a Elsevier Fingerprint Engine instance may take more time;
+restarting large combinations of workflows then becomes unwieldy.</p>
+<p>Installing the Elsevier Fingerprint Engine requires a number of additional steps to be taken before and after running the installation software,</p>
+<span class="target" id="keinstallation-prerequisites"></span></div>
+<div class="section" id="prerequisites">
+<span id="index-4"></span><h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h2>
+<p>An installation of Elsevier Fingerprint Engine needs a system meeting the following requirements:</p>
+<ul class="simple">
+<li>Windows Server 2003, XP, Vista or Server 2008.
+It is required that your particular flavor of Windows system includes / supports IIS.</li>
+<li>Internet Information Services (IIS) version 6 or 7.
+The IIS installation is part of the Windows (Server) Operating system and can be configured using the Control Panel,
+Programs / Software, Windows Components entry point.
+The Elsevier Fingerprint Engine needs an IIS installation with .Net scripting support.</li>
+<li>.Net support.
+The Elsevier Fingerprint Engine requires the .Net framework version 4.0. See <a class="reference external" href="http://www.microsoft.com/NET/">Microsoft .Net</a>.
+The installer checks which version of .Net is installed.</li>
+<li>An SQL server 2008 installation (or newer) to contain thesaurus data.
+For security configuration purposes this is preferably locally installed but a remote SQL Server installation is supported as well.
+Also <a class="reference external" href="http://www.microsoft.com/express/sql/">SQL Server express</a> is sufficient, but note that it supports only small datasets. For thesauri, however, the limit on database size is high enough.</li>
+<li>Disk space.
+The binaries for a Elsevier Fingerprint Engine instance take less than 20MB, but obviously more is better.
+Thesauri sizes range from just a few MBs to 800MB. For good system performance, go with a reasonable minimum of - for instance - 250GB.</li>
+<li>Sufficient RAM space.
+The bare minimum is 1GB. For good performance, 16GB is recommended.
+If large thesauri are used, more RAM will improve performance.</li>
+<li>Processor capacity.
+The Elsevier Fingerprint Engine will work just fine on a single-processor machine.
+However, the program has been designed with multi-threading in mind, so if you have multiple cores, the Elsevier Fingerprint Engine will use them.</li>
+</ul>
+</div>
+<div class="section" id="steps-before-installing-the-software">
+<span id="keinstallation-stepsbefore"></span><h2>Steps before installing the software<a class="headerlink" href="#steps-before-installing-the-software" title="Permalink to this headline">¶</a></h2>
+<span class="target" id="keinstallation-installing"></span></div>
+<div class="section" id="installing-the-software">
+<span id="index-5"></span><h2>Installing the software<a class="headerlink" href="#installing-the-software" title="Permalink to this headline">¶</a></h2>
+<p>Multiple instances of the Fingerprint Engine can be installed next to one another on a single machine.
+This entails running the TACOInstallerIIS.exe multiple times. Do note that then unique instance names should be supplied during
+installation. Using a names that was previously using during an installation will overwrite that instance. This is allowed, but
+of course will result in losing the previous instance.
+It is recommended, however, to uninstall an instance <em>with its own un-install program</em> before reusing the instance name.</p>
+<p>The Elsevier Fingerprint Engine installer administers all instances that are installed in the registry.</p>
+<p>A Elsevier Fingerprint Engine instance is installed as an IIS Application.
+The installer suggests the IIS wwwroot-folder as the proposed installation location.
+However, the Elsevier Fingerprint Engine can be installed on another location. In that case the installer will create
+a virtual directory in IIS.</p>
+<p>After selecting the root folder for installation, an instance name must be specified.
+The previously installed instance names will be listed. Again note that picking a name that already exists
+will overwrite that Elsevier Fingerprint Engine instance.</p>
+<p id="index-6">The installation procedure installs a program <em>UninstallTACOInstance</em> in the Elsevier Fingerprint Engine root folder. This program
+should be used to uninstall.</p>
+<span class="target" id="keinstallation-stepsafter"></span></div>
+<div class="section" id="steps-after-installing-the-software">
+<span id="index-7"></span><h2>Steps after installing the software<a class="headerlink" href="#steps-after-installing-the-software" title="Permalink to this headline">¶</a></h2>
+<p>The TACOThesauri.exe installer will install the thesaurus databases in the SQL Server backup format.
+To enable SQL Server to use these files, the backups need to be restored. This is best done using the SQL Server Management Console.
+Note that the backup also contains the definition of the logins and users that are allowed to access the database. After restoring
+the thesaurus databases one should make sure that access to the database is allowed by the user referred to in the application pool identity.</p>
+<p id="index-8">Once these steps have been taken next steps are <a class="reference internal" href="KEConfiguration.html#keconfiguration"><em>configuring</em></a> the installed Elsevier Fingerprint Engine instance and finally <a class="reference internal" href="#keinstallation-testing"><em>testing</em></a> it.
+There are two files that need configuration: <tt class="file docutils literal"><em><span class="pre">installation</span> <span class="pre">folder</span></em><span class="pre">\web.config</span></tt> and <tt class="file docutils literal"><em><span class="pre">installation</span> <span class="pre">folder</span></em><span class="pre">\config\</span><em><span class="pre">instance</span> <span class="pre">config</span> <span class="pre">folder</span></em></tt>.
+The instance config folder is indicated by the web,config file.
+The details of configuring a Elsevier Fingerprint Engine instance are found in the section on <a class="reference internal" href="KEConfiguration.html#keconfiguration-instance"><em>instance configuration</em></a>.</p>
+</div>
+<div class="section" id="starting-a-cke-instance">
+<span id="keinstallation-running"></span><h2>Starting a Elsevier Fingerprint Engine Instance<a class="headerlink" href="#starting-a-cke-instance" title="Permalink to this headline">¶</a></h2>
+<p>The Elsevier Fingerprint Engine installs as an IIS-managed web service.
+This means that the Elsevier Fingerprint Engine service is started and stopped as an IIS server process.
+See the section on <a class="reference internal" href="KEConfiguration.html#keconfiguration-instance"><em>instance configuration</em></a> how to properly configure an instance.
+Editing or even just touching the <tt class="file docutils literal"><span class="pre">web.config</span></tt> file will restart the Elsevier Fingerprint Engine service.
+Another option is to recycle the application pool the instance is located in. See, e.g.,
+<a class="reference external" href="http://technet.microsoft.com/en-us/library/cc735247%28WS.10%29.aspx">http://technet.microsoft.com/en-us/library/cc735247%28WS.10%29.aspx</a>.</p>
+<p>A Elsevier Fingerprint Engine instance consists of one or more workflows that each consist of a number of processing steps.
+Several of these activities, such as Normalization, Thesaurus-based concept finding
+or Part-Of-Speech tagging, require a large amount of data in order to perform their tasks.
+For performance reasons, the data for these activities is stored statically, which means that the data
+remains loaded throughout the lifetime of the Elsevier Fingerprint Engine instance.
+However, the IIS server may unload a program if that program remains inactive for a longer period of time.
+The effect of this is that an initial call to the Fingerprint Engine may take very long, up to a minute, while subsequent calls are
+handled very fast - as they should be.</p>
+</div>
+<div class="section" id="troubleshooting">
+<span id="keinstallation-troubleshooting"></span><span id="index-9"></span><h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h2>
+<p>This guide will not detail the ins and outs of Windows or IIS administration.
+However, a few problems may occur that can be solved easily in cases where the Fingerprint Engine service does not start or is producing an exception.
+This can have a number of causes, the most frequent ones are mentioned in this section.</p>
+<div class="section" id="ke-instance-problems">
+<h3>Fingerprint Engine instance problems<a class="headerlink" href="#ke-instance-problems" title="Permalink to this headline">¶</a></h3>
+<p>In case the Fingerprint Engine instance does not start, the configuration of the service in IIS might be invalid. You should check the following:</p>
+<ul class="simple">
+<li>If you run into trouble running Elsevier Fingerprint Engine, check whether .Net version 4.0 has been installed.</li>
+<li>Check if the IIS server has been configured to run ASP/.Net applications.
+If ASP/.Net scripting was not installed right from the start, it can be installed by running the
+following from the command prompt (in administrator mode).
+Cf. <a class="reference external" href="http://msdn.microsoft.com/en-us/library/k6h9cz8h%28v=VS.100%29.aspx">http://msdn.microsoft.com/en-us/library/k6h9cz8h%28v=VS.100%29.aspx</a>.</li>
+</ul>
+<div class="highlight-bat"><div class="highlight"><pre>pushd c:\WINDOWS\Microsoft.NET\Framework\v<span class="m">4</span>.<span class="m">0</span>.<span class="m">30319</span>\
+
+[Or<span class="p">,</span> <span class="k">on</span> <span class="m">64</span> bit machines:]
+
+pushd c:\WINDOWS\Microsoft.NET\Framework<span class="m">64</span>\v<span class="m">4</span>.<span class="m">0</span>.<span class="m">30319</span>\
+</pre></div>
+</div>
+<div class="highlight-bat"><div class="highlight"><pre>aspnet_regiis.exe -iru
+popd
+</pre></div>
+</div>
+<ul class="simple">
+<li>Make sure that the Elsevier Fingerprint Engine folder in the IIS website has been marked as an &#8216;application&#8217; with scripting privileges.
+The installer performs this normally, but this might have failed.
+Also, from the application&#8217;s ASP.Net tab (in the IIS management console for IIS6), select the ASP.Net framework 4.</li>
+<li>Make sure that the ServiceModel of .Net is registered (if not, see below).
+This registration is part of the ASP.Net system setup, and can be found</li>
+<li>In between steps, stop and restart the IIS application pool that contains the Elsevier Fingerprint Engine application.
+Once an initialisation of the Elsevier Fingerprint Engine instance fails, the error will not be recovered until re-start.</li>
+<li>On all operating systems, you must allow Asp.Net 4.0 as a web server extension.
+Some systems are not configured that way by default.</li>
+</ul>
+</div>
+<div class="section" id="sql-server-connection-problems">
+<h3>SQL Server connection problems<a class="headerlink" href="#sql-server-connection-problems" title="Permalink to this headline">¶</a></h3>
+<p>The Elsevier Fingerprint Engine IIS server process must have enough rights to be able to connect to resources it needs. Since SQL Server has a strict
+access policy, this is the most likely resource that cannot be connected to.</p>
+<p>IIS runs the Fingerprint Engine service in an application pool, that has an identity. This identity is a user or a service like the local
+<tt class="docutils literal"><span class="pre">NETWORK</span> <span class="pre">SERVICE</span></tt> or <tt class="docutils literal"><span class="pre">LOCAL</span> <span class="pre">SERVICE</span></tt>. These should be known to SQL Server as logins and connected to a user that has access
+to the databases that the Fingerprint Engine instance needs as resource.</p>
+<p>The intricacies of achieving this will not be dealt with here.
+See, e.g., <a class="reference external" href="http://msdn.microsoft.com/en-us/library/ms181127.aspx">MSDN</a>.</p>
+</div>
+</div>
+<div class="section" id="testing-a-cke-instance">
+<span id="keinstallation-testing"></span><h2>Testing a Elsevier Fingerprint Engine instance<a class="headerlink" href="#testing-a-cke-instance" title="Permalink to this headline">¶</a></h2>
+<p>If the Elsevier Fingerprint Engine instance has successfully been installed on a host machine (say, localhost) then
+the IIS server should allow the Elsevier Fingerprint Engine process to run and initialize.</p>
+<p>An initial proof of a successfull installation can be obtained by opening the following page in a
+web browser:</p>
+<div class="highlight-xml"><div class="highlight"><pre>http://localhost/taco/TacoService.svc/          (replace &#39;taco&#39; with your instance name)
+</pre></div>
+</div>
+<p>This call should return a status report for the Elsevier Fingerprint Engine instance at hand.
+The resulting XML contains information on</p>
+<blockquote>
+<div><ul class="simple">
+<li>available workflows (relevant for the Elsevier Fingerprint Engine client - programmer)</li>
+<li>available annotation types (relevant for the Elsevier Fingerprint Engine users / client)</li>
+<li>available static object interfaces (relevant for administrator that builds a Elsevier Fingerprint Engine configuration)</li>
+</ul>
+</div></blockquote>
+<p>See <a class="reference internal" href="KEConfiguration.html#keconfiguration-instance"><em>instance configuration</em></a> for more detailed information.</p>
+<div class="section" id="inspecting-a-cke-instance">
+<h3>Inspecting a Elsevier Fingerprint Engine instance<a class="headerlink" href="#inspecting-a-cke-instance" title="Permalink to this headline">¶</a></h3>
+<p>If the Elsevier Fingerprint Engine instance has successfully been installed on a host machine, an administrator or power-user
+can inspect the installation for what items have been installed by opening a status page with the following
+URL:</p>
+<div class="highlight-xml"><div class="highlight"><pre>http://localhost/taco/Status.svc/          (replace &#39;taco&#39; with your instance name)
+</pre></div>
+</div>
+<p>This should return the file versions and other information on executable DLLs.
+Should you receive additional DLLs from Elsevier, these DLLs may required specific
+versions of previously installed DLLs. This status page will provide the administrator with information.
+Should you need to report a problem to Elsevier, also provide this status information.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Installing the Elsevier Fingerprint Engine</a><ul>
+<li><a class="reference internal" href="#installers-and-deliverables">Installers and deliverables</a></li>
+<li><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li><a class="reference internal" href="#steps-before-installing-the-software">Steps before installing the software</a></li>
+<li><a class="reference internal" href="#installing-the-software">Installing the software</a></li>
+<li><a class="reference internal" href="#steps-after-installing-the-software">Steps after installing the software</a></li>
+<li><a class="reference internal" href="#starting-a-cke-instance">Starting a Elsevier Fingerprint Engine Instance</a></li>
+<li><a class="reference internal" href="#troubleshooting">Troubleshooting</a><ul>
+<li><a class="reference internal" href="#ke-instance-problems">Fingerprint Engine instance problems</a></li>
+<li><a class="reference internal" href="#sql-server-connection-problems">SQL Server connection problems</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#testing-a-cke-instance">Testing a Elsevier Fingerprint Engine instance</a><ul>
+<li><a class="reference internal" href="#inspecting-a-cke-instance">Inspecting a Elsevier Fingerprint Engine instance</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="KEConcepts.html"
+                        title="previous chapter">Concepts of the Elsevier Fingerprint Engine</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="KEConfiguration.html"
+                        title="next chapter">Configuring the Elsevier Fingerprint Engine</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="KEConfiguration.html" title="Configuring the Elsevier Fingerprint Engine"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="KEConcepts.html" title="Concepts of the Elsevier Fingerprint Engine"
+             >previous</a> |</li>
+        <li><a href="index.html">Elsevier Fingerprint Engine 7.6.0.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Elsevier.
+      Last updated on Apr 01, 2015.
+    </div>
+  </body>
+</html>
