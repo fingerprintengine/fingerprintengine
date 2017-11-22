@@ -1,0 +1,270 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Workflow Lists &mdash; Elsevier Fingerprint Engine 7.6.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/Elsevier.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '7.6.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  false
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="shortcut icon" href="_static/QuarterCircle.ico"/>
+    <link rel="top" title="Elsevier Fingerprint Engine 7.6.0.0 documentation" href="index.html" />
+    <link rel="next" title="Static objects" href="KEStaticObjects.html" />
+    <link rel="prev" title="Activity Index" href="EFEActivitiesIndex.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="KEStaticObjects.html" title="Static objects"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="EFEActivitiesIndex.html" title="Activity Index"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Elsevier Fingerprint Engine 7.6.0.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <span class="target" id="index-0"></span><div class="section" id="workflow-lists">
+<span id="keworkflowlists"></span><span id="index-1"></span><h1>Workflow Lists<a class="headerlink" href="#workflow-lists" title="Permalink to this headline">¶</a></h1>
+<p>The workflow configuration file <tt class="docutils literal"><span class="pre">WorkflowList.xaml</span></tt> contains a list of defined workflows.
+The Elsevier Fingerprint Engine instance embedded in the IIS Server will expose handles for each workflow defined.
+The URLs for each workflow are based on the default host URL as defined during the Fingerprint Engine <a class="reference internal" href="KEInstallation.html#keinstallation-installing"><em>instance installation</em></a>.</p>
+<p>The server exposes two handles for each workflow: a SOAP interface and a
+<a class="reference external" href="http://www.ibm.com/developerworks/webservices/library/ws-restful/index.html">REST</a> interface.
+The resulting URLs for a workflow as below (SampleWorkFlow) are as follows.</p>
+<div class="highlight-none"><div class="highlight"><pre>REST: BASEURL/WorkFlowName/TacoService.svc : http://localhost/TACO/SampleWorkflow/TacoService.svc
+SOAP: BASEURL/WorkFlowName/Xml.svc         : http://localhost/TACO/SampleWorkflow/Xml.svc?wsdl
+</pre></div>
+</div>
+<p>The workflow configuration needs, for each workflow:</p>
+<ul class="simple">
+<li>a (unique) name for the workflow,</li>
+<li>a reference to the XOML-file that contains the <a class="reference internal" href="KEConfiguration.html#keconfiguration-workflow"><em>configuration of that individual workflow</em></a>,</li>
+<li>a reference to the static object that defines the output <a class="reference internal" href="KEStaticObjects.html#outputfilter"><em>annotation filter</em></a> for this workflow.</li>
+<li>[optional] a reference (by name) to the <a class="reference internal" href="#kepreprocessors"><em>preprocessor</em></a> pre-processing the input to this workflow.</li>
+<li>[optional] a reference (by name) to the object that defines an <a class="reference internal" href="KEStaticObjects.html#annotationextender"><em>annotation extender</em></a> for the
+outputs of this workflow.</li>
+</ul>
+<div class="highlight-xml"><div class="highlight"><pre><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+<span class="nt">&lt;Workflows</span>
+    <span class="na">xmlns=</span><span class="s">&quot;clr-namespace:TACO.Core;assembly=TACO.Core&quot;</span>
+    <span class="na">xmlns:xaml=</span><span class="s">&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;</span>
+    <span class="nt">&gt;</span>
+    <span class="nt">&lt;Workflow</span>
+        <span class="na">xaml:Key=</span><span class="s">&quot;SampleWorkflow&quot;</span>
+        <span class="na">Path=</span><span class="s">&quot;SampleWorkflow.xoml&quot;</span>
+        <span class="na">AnnotationFilter=</span><span class="s">&quot;WhiteList&quot;</span>
+        <span class="nt">/&gt;</span>
+    <span class="nt">&lt;Workflow</span>
+        <span class="na">xaml:Key=</span><span class="s">&quot;ExtendedWorkflow&quot;</span>
+        <span class="na">Path=</span><span class="s">&quot;SampleWorkflow.xoml&quot;</span>
+        <span class="na">AnnotationFilter=</span><span class="s">&quot;WhiteList&quot;</span>
+        <span class="na">AnnotationExtender=</span><span class="s">&quot;Extender&quot;</span>
+        <span class="na">Preprocessor=</span><span class="s">XmlPreprocessor&quot;</span>
+        <span class="nt">/&gt;</span>
+<span class="nt">&lt;/Workflows&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="preprocessors">
+<span id="kepreprocessors"></span><span id="index-2"></span><h1>Preprocessors<a class="headerlink" href="#preprocessors" title="Permalink to this headline">¶</a></h1>
+<p>Preprocessors are not so much a functional part of the Elsevier Fingerprint Engine: rather, preprocessors filter or adapt the input
+in order to deliver the correct input to the Fingerprint Engine, that is: text.
+<a class="reference internal" href="#kepreprocessors"><em>Preprocessors</em></a> are separate modules that convert and or format a text to
+make it suitable to submit to the Fingerprint Engine. For instance, a preprocessor could take an HTML document, extract the text to
+be processed, and add a section annotation to indicate the title, body etc. The <a class="reference internal" href="KEActivities.html#tokenize"><em>Tokenize activity</em></a>
+for instance, can accept a section annotation and process it.</p>
+<div class="section" id="nooppreprocessor">
+<h2>NoOpPreprocessor<a class="headerlink" href="#nooppreprocessor" title="Permalink to this headline">¶</a></h2>
+<p>The no-op preprocessor is the preprocessor that is selected if no other preprocessor has been defined.
+This preprocessor does nothing.
+There is no need to specify it; it will be selected by default and does not need to be defined in the static objects.</p>
+</div>
+<div class="section" id="xmlsectionspreprocessor">
+<span id="kexmlsectionspreprocessor"></span><h2>XmlSectionsPreprocessor<a class="headerlink" href="#xmlsectionspreprocessor" title="Permalink to this headline">¶</a></h2>
+<p>The XmlSectionsPreprocessor is a conceptually rather simple preprocessor that can handle input
+that is structured by limited Xml for simple section markup.
+The Elsevier Fingerprint Engine allows for document segmentation in major units such as <em>title</em>, <em>abstract</em> and <em>references</em>.
+This segmentation is derived from the input by simply associating <tt class="docutils literal"><span class="pre">Section</span></tt> annotations with 2nd level
+xml nodes in the input text. For example consider the following input:</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;document&gt;</span>
+    <span class="nt">&lt;title&gt;</span>this is the title<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;abstract&gt;</span>this is the abstract<span class="nt">&lt;/abstract&gt;</span>
+<span class="nt">&lt;/document&gt;</span>
+</pre></div>
+</div>
+<p>The XmlSectionsPreprocessor will produce section annotations that designate the first line of text as &#8216;title&#8217;
+and the second line as &#8216;abstract&#8217;. These section names can be used in the <a class="reference internal" href="KEActivities.html#makefingerprint"><em>fingerprinting activity</em></a>
+to, for example, assign maximum weights to concepts occurring in the title but balanced weights to
+concepts occurring the abstract section.
+The XmlSectionsPreprocessor allows for 2-levels of Xml structure only; processing a document like <tt class="docutils literal"><span class="pre">&lt;xml&gt;&lt;first&gt;&lt;second&gt;&lt;/second&gt;&lt;/first&gt;&lt;/xml&gt;</span></tt> will result in an error.</p>
+</div>
+<div class="section" id="xmlpreprocessor">
+<span id="kexmlpreprocessor"></span><h2>XmlPreprocessor<a class="headerlink" href="#xmlpreprocessor" title="Permalink to this headline">¶</a></h2>
+<p>The XmlPreprocessor is a conceptually rather simple preprocessor that can handle input
+that uses full Xml for section markup.
+The Elsevier Fingerprint Engine only allows for document segmentation in major units such as <em>title</em>, <em>abstract</em> and <em>references</em>.
+As in the XmlSectionsPreprocessor, this segmentation is derived from the input by simply associating <tt class="docutils literal"><span class="pre">Section</span></tt> annotations with 2nd level
+Xml nodes in the input text.</p>
+<p>However, Xml may have more structure or annotations than just two levels of sectioning.
+Elsevier Fingerprint Engine can also handle input with subscripts or superscripts, or other formatting markup, such as in the example below.</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;document&gt;</span>
+    <span class="nt">&lt;title&gt;</span>This is about CO<span class="nt">&lt;sub&gt;</span>2<span class="nt">&lt;/sub&gt;</span>.<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;abstract&gt;&lt;emph&gt;</span>Carbondioxide<span class="nt">&lt;/emph&gt;&lt;/abstract&gt;</span>
+<span class="nt">&lt;/document&gt;</span>
+</pre></div>
+</div>
+<p>The XmlPreprocessor removes all of the mark-up below the second level.
+The embedded text between those tags will not be treated as separate sections, but will be tokenized separately.
+This means that <tt class="docutils literal"><span class="pre">CO2</span></tt> is a single token but <tt class="docutils literal"><span class="pre">CO&lt;sub&gt;2&lt;/sub&gt;</span></tt> are two.</p>
+<p>In contrast to the XmlSectionsPreprocessor, the XmlPreprocessor is also very restrictive in Xml parsing, e.g. it will require namespace
+definitions in order to be able to parse the Xml properly.
+The definition of an XmlPreprocessor, therefore, may optionally contain namespace definitions defined in the <tt class="docutils literal"><span class="pre">Collexis.Common</span></tt> namespace definition format.</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;st:XmlPreprocessor</span> <span class="na">xaml:Key=</span><span class="s">&quot;fullxml&quot;</span>
+    <span class="na">xmlns:st=</span><span class="s">&quot;clr-namespace:TACO.Core.Storage;assembly=TACO.Core&quot;</span>
+    <span class="na">xmlns:cc=</span><span class="s">&quot;clr-namespace:Collexis.Common;assembly=Collexis.Common&quot;</span> <span class="nt">&gt;</span>
+    <span class="nt">&lt;st:XmlPreprocessor.Namespaces&gt;</span>
+        <span class="nt">&lt;cc:Namespaces&gt;</span>
+            <span class="nt">&lt;cc:Namespace</span> <span class="na">Prefix=</span><span class="s">&quot;ce&quot;</span> <span class="na">URL=</span><span class="s">&quot;http://www.elsevier.com/xml/common/dtd&quot;</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;cc:Namespace</span> <span class="na">Prefix=</span><span class="s">&quot;ait&quot;</span> <span class="na">URL=</span><span class="s">&quot;http://www.elsevier.com/xml/common/ait/dtd&quot;</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;cc:Namespace</span> <span class="na">Prefix=</span><span class="s">&quot;sb&quot;</span> <span class="na">URL=</span><span class="s">&quot;http://www.elsevier.com/xml/common/struct-bib/dtd&quot;</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;cc:Namespace</span> <span class="na">Prefix=</span><span class="s">&quot;xlink&quot;</span> <span class="na">URL=</span><span class="s">&quot;http://www.w3.org/1999/xlink&quot;</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;/cc:Namespaces&gt;</span>
+    <span class="nt">&lt;/st:XmlPreprocessor.Namespaces&gt;</span>
+<span class="nt">&lt;/st:XmlPreprocessor&gt;</span>
+</pre></div>
+</div>
+<div class="section" id="section-types-metadata">
+<span id="index-3"></span><h3>Section types, metadata<a class="headerlink" href="#section-types-metadata" title="Permalink to this headline">¶</a></h3>
+<p>For all Xml sections, the semantics for the section can be defined in the <tt class="docutils literal"><span class="pre">XmlPreprocessor</span></tt> configuration.
+There are a number of possible section types.</p>
+<ul class="simple">
+<li>Parent : top level section, containing embedded content sections</li>
+<li>Content : leaf level section, containing actual content. content of this section will be processed as text</li>
+<li>Metadata : metadata section, containing configurational or other metadata that does not get analyzed as text</li>
+</ul>
+<p>The <tt class="docutils literal"><span class="pre">Parent</span></tt> and <tt class="docutils literal"><span class="pre">Content</span></tt> section types cannot be configured but are computed by the preprocessor - determined by the location of the
+Xml node in the Xml document. In a structured Xml document, the top node is classified as <tt class="docutils literal"><span class="pre">Parent</span></tt> whereas embedded nodes are by
+default <tt class="docutils literal"><span class="pre">Content</span></tt>.
+However, if a section has been explicitly configured as <tt class="docutils literal"><span class="pre">Metadata</span></tt>, it will not be put through the text analysis but rather the section
+is set aside to be used by other processing logic that accesses metadata sections.</p>
+<p>Currently, the only class accessing metadata is the <a class="reference internal" href="KEDependentProcessing.html#metadatafilter"><em>metadata filter</em></a> that can be used to control the workflow.
+Configuration of explicit section assignments is as follows:</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;st:XmlPreprocessor</span> <span class="na">xaml:Key=</span><span class="s">&quot;fullxml&quot;</span>
+    <span class="na">xmlns:st=</span><span class="s">&quot;clr-namespace:TACO.Core.Storage;assembly=TACO.Core&quot;</span>
+    <span class="na">xmlns:cc=</span><span class="s">&quot;clr-namespace:Collexis.Common;assembly=Collexis.Common&quot;</span> <span class="nt">&gt;</span>
+
+    <span class="nt">&lt;SectionType</span> <span class="na">xaml:Key=</span><span class="s">&quot;metadata&quot;</span><span class="nt">&gt;</span>Metadata<span class="nt">&lt;/SectionType&gt;</span>
+    <span class="nt">&lt;SectionType</span> <span class="na">xaml:Key=</span><span class="s">&quot;Metadata&quot;</span><span class="nt">&gt;</span>Metadata<span class="nt">&lt;/SectionType&gt;</span>
+
+    <span class="nt">&lt;st:XmlPreprocessor.Namespaces&gt;</span>
+        <span class="nt">&lt;cc:Namespaces&gt;</span>
+            <span class="nt">&lt;cc:Namespace</span> <span class="na">Prefix=</span><span class="s">&quot;ce&quot;</span> <span class="na">URL=</span><span class="s">&quot;http://www.elsevier.com/xml/common/dtd&quot;</span> <span class="nt">/&gt;</span>
+            ...
+        <span class="nt">&lt;/cc:Namespaces&gt;</span>
+    <span class="nt">&lt;/st:XmlPreprocessor.Namespaces&gt;</span>
+<span class="nt">&lt;/st:XmlPreprocessor&gt;</span>
+</pre></div>
+</div>
+<p>The result of this is that from a document such as the following only the <tt class="docutils literal"><span class="pre">&lt;text</span> <span class="pre">/&gt;</span></tt> and <tt class="docutils literal"><span class="pre">&lt;title</span> <span class="pre">/&gt;</span></tt> sections will be processed.</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;xml&gt;</span>
+    <span class="nt">&lt;title&gt;</span>this is my document<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;text&gt;</span>this is the text <span class="nt">&lt;/text&gt;</span>
+    <span class="nt">&lt;metadata&gt;&lt;workflows&gt;&lt;workflow&gt;</span>workflow<span class="nt">&lt;/workflow&gt;&lt;/workflows&gt;&lt;/metadata&gt;</span>
+<span class="nt">&lt;/xml&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Workflow Lists</a></li>
+<li><a class="reference internal" href="#preprocessors">Preprocessors</a><ul>
+<li><a class="reference internal" href="#nooppreprocessor">NoOpPreprocessor</a></li>
+<li><a class="reference internal" href="#xmlsectionspreprocessor">XmlSectionsPreprocessor</a></li>
+<li><a class="reference internal" href="#xmlpreprocessor">XmlPreprocessor</a><ul>
+<li><a class="reference internal" href="#section-types-metadata">Section types, metadata</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="EFEActivitiesIndex.html"
+                        title="previous chapter">Activity Index</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="KEStaticObjects.html"
+                        title="next chapter">Static objects</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="KEStaticObjects.html" title="Static objects"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="EFEActivitiesIndex.html" title="Activity Index"
+             >previous</a> |</li>
+        <li><a href="index.html">Elsevier Fingerprint Engine 7.6.0.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Elsevier.
+      Last updated on Apr 01, 2015.
+    </div>
+  </body>
+</html>
