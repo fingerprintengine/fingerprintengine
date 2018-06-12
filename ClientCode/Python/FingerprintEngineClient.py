@@ -62,6 +62,21 @@ class FingerprintEngineClient:
         f = urllib.request.urlopen(req)
         return TextAnalysis(f.read())
 
+    # index a document with title and abstract
+    def classify(self, workflow, data):
+        req = urllib.request.Request(url=self.url + '/TacoService.svc/' + workflow, data=data.encode('utf-8'), headers=self.headers)
+        f = urllib.request.urlopen(req)
+        return ClassificationAnalysis(f.read())
+
+"""
+    Class to contain categories and rank value
+"""
+class CategoryRank:
+    def __init__(self, rank, name):
+        self.rank   = rank
+        self.name   = name
+
+
 """
     Class to contain concepts and concept weights
 """
@@ -115,7 +130,23 @@ class TermAnnotation:
         self.text       = optionalElement(xml, 'r:Text')
 
 """
-    Class to store and use the output of a TACO call
+    Class to store and use the output of a TACO Classification call
+"""
+class ClassificationAnalysis:
+    def __init__(self, xml):
+        self.tree = ET.fromstring(xml)
+
+    def toRanking(self):
+        ranking = []
+        for category in self.tree.findall(".//r:Annotation[@i:type='Category']", ns):
+            ranking.append(CategoryRank(
+                category.find('r:Rank', ns).text,
+                category.find('r:Name', ns).text))
+        return ranking
+
+
+"""
+    Class to store and use the output of a TACO Indexing call
 """
 class TextAnalysis:
     def __init__(self, xml):
