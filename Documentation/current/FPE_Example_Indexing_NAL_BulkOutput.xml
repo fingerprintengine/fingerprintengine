@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<BulkAnalysis>
+  <Document>
+    <ID>1</ID>
+    <TextAnalysis xmlns="http://www.collexis.com/annotations/" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+      <Annotations>
+        <Annotation i:type="ConceptAnnotation">
+          <AFreq>1</AFreq>
+          <ConceptID>14059</ConceptID>
+          <Name>photosynthesis</Name>
+          <Rank>0.333333343</Rank>
+          <Thesaurus>NAL</Thesaurus>
+        </Annotation>
+        <Annotation i:type="ConceptAnnotation">
+          <AFreq>1</AFreq>
+          <ConceptID>874</ConceptID>
+          <Name>plants (botany)</Name>
+          <Rank>0.333333343</Rank>
+          <Thesaurus>NAL</Thesaurus>
+        </Annotation>
+        <Annotation i:type="ConceptAnnotation">
+          <AFreq>2</AFreq>
+          <ConceptID>4628</ConceptID>
+          <Name>organisms</Name>
+          <Rank>0.6666667</Rank>
+          <Thesaurus>NAL</Thesaurus>
+        </Annotation>
+        <Annotation i:type="ConceptAnnotation">
+          <AFreq>1</AFreq>
+          <ConceptID>18228</ConceptID>
+          <Name>light</Name>
+          <Rank>0.333333343</Rank>
+          <Thesaurus>NAL</Thesaurus>
+        </Annotation>
+        <Annotation i:type="ConceptAnnotation">
+          <AFreq>3</AFreq>
+          <ConceptID>37097</ConceptID>
+          <Name>energy</Name>
+          <Rank>1</Rank>
+          <Thesaurus>NAL</Thesaurus>
+        </Annotation>
+        <Annotation i:type="ConceptAnnotation">
+          <AFreq>1</AFreq>
+          <ConceptID>17362</ConceptID>
+          <Name>fuels</Name>
+          <Rank>0.333333343</Rank>
+          <Thesaurus>NAL</Thesaurus>
+        </Annotation>
+        <Annotation i:type="ConceptAnnotation">
+          <AFreq>1</AFreq>
+          <ConceptID>17263</ConceptID>
+          <Name>carbohydrates</Name>
+          <Rank>0.333333343</Rank>
+          <Thesaurus>NAL</Thesaurus>
+        </Annotation>
+        <Annotation i:type="ConceptAnnotation">
+          <AFreq>1</AFreq>
+          <ConceptID>987</ConceptID>
+          <Name>sugars</Name>
+          <Rank>0.333333343</Rank>
+          <Thesaurus>NAL</Thesaurus>
+        </Annotation>
+        <Annotation i:type="ConceptAnnotation">
+          <AFreq>1</AFreq>
+          <ConceptID>17007</ConceptID>
+          <Name>carbon dioxide</Name>
+          <Rank>0.333333343</Rank>
+          <Thesaurus>NAL</Thesaurus>
+        </Annotation>
+        <Annotation i:type="ConceptAnnotation">
+          <AFreq>1</AFreq>
+          <ConceptID>6435</ConceptID>
+          <Name>water</Name>
+          <Rank>0.333333343</Rank>
+          <Thesaurus>NAL</Thesaurus>
+        </Annotation>
+      </Annotations>
+    </TextAnalysis>
+  </Document>
+  <Document>
+    <ID>2</ID>
+    <TextAnalysis xmlns="http://www.collexis.com/annotations/" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+      <Annotations>
+        <Annotation i:type="ConceptAnnotation">
+          <AFreq>1</AFreq>
+          <ConceptID>35</ConceptID>
+          <Name>algae</Name>
+          <Rank>0.5</Rank>
+          <Thesaurus>NAL</Thesaurus>
+        </Annotation>
+        <Annotation i:type="ConceptAnnotation">
+          <AFreq>2</AFreq>
+          <ConceptID>4628</ConceptID>
+          <Name>organisms</Name>
+          <Rank>1</Rank>
+          <Thesaurus>NAL</Thesaurus>
+        </Annotation>
+        <Annotation i:type="ConceptAnnotation">
+          <AFreq>1</AFreq>
+          <ConceptID>6348</ConceptID>
+          <Name>microalgae</Name>
+          <Rank>0.5</Rank>
+          <Thesaurus>NAL</Thesaurus>
+        </Annotation>
+        <Annotation i:type="ConceptAnnotation">
+          <AFreq>1</AFreq>
+          <ConceptID>25303</ConceptID>
+          <Name>Chlorella</Name>
+          <Rank>0.5</Rank>
+          <Thesaurus>NAL</Thesaurus>
+        </Annotation>
+        <Annotation i:type="ConceptAnnotation">
+          <AFreq>1</AFreq>
+          <ConceptID>14475</ConceptID>
+          <Name>Bacillariophyceae</Name>
+          <Rank>0.5</Rank>
+          <Thesaurus>NAL</Thesaurus>
+        </Annotation>
+        <Annotation i:type="ConceptAnnotation">
+          <AFreq>1</AFreq>
+          <ConceptID>6347</ConceptID>
+          <Name>macroalgae</Name>
+          <Rank>0.5</Rank>
+          <Thesaurus>NAL</Thesaurus>
+        </Annotation>
+        <Annotation i:type="ConceptAnnotation">
+          <AFreq>1</AFreq>
+          <ConceptID>25644</ConceptID>
+          <Name>Phaeophyceae</Name>
+          <Rank>0.5</Rank>
+          <Thesaurus>NAL</Thesaurus>
+        </Annotation>
+        <Annotation i:type="ConceptAnnotation">
+          <AFreq>1</AFreq>
+          <ConceptID>49619</ConceptID>
+          <Name>length</Name>
+          <Rank>0.5</Rank>
+          <Thesaurus>NAL</Thesaurus>
+        </Annotation>
+      </Annotations>
+    </TextAnalysis>
+  </Document>
+</BulkAnalysis>

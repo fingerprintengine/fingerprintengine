@@ -1,0 +1,4243 @@
+<?xml version="1.0"?>
+<TextAnalysis xmlns="http://www.collexis.com/annotations/" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+  <Annotations>
+    <Annotation i:type="ConceptAnnotation">
+      <AFreq>3</AFreq>
+      <ConceptID>14059</ConceptID>
+      <Name>photosynthesis</Name>
+      <Rank>1</Rank>
+      <Thesaurus>NAL</Thesaurus>
+    </Annotation>
+    <Annotation i:type="ConceptAnnotation">
+      <AFreq>2</AFreq>
+      <ConceptID>874</ConceptID>
+      <Name>plants (botany)</Name>
+      <Rank>0.6666667</Rank>
+      <Thesaurus>NAL</Thesaurus>
+    </Annotation>
+    <Annotation i:type="ConceptAnnotation">
+      <AFreq>3</AFreq>
+      <ConceptID>4628</ConceptID>
+      <Name>organisms</Name>
+      <Rank>1</Rank>
+      <Thesaurus>NAL</Thesaurus>
+    </Annotation>
+    <Annotation i:type="ConceptAnnotation">
+      <AFreq>3</AFreq>
+      <ConceptID>37097</ConceptID>
+      <Name>energy</Name>
+      <Rank>1</Rank>
+      <Thesaurus>NAL</Thesaurus>
+    </Annotation>
+    <Annotation i:type="ConceptAnnotation">
+      <AFreq>1</AFreq>
+      <ConceptID>17362</ConceptID>
+      <Name>fuels</Name>
+      <Rank>0.333333343</Rank>
+      <Thesaurus>NAL</Thesaurus>
+    </Annotation>
+    <Annotation i:type="ConceptAnnotation">
+      <AFreq>1</AFreq>
+      <ConceptID>17263</ConceptID>
+      <Name>carbohydrates</Name>
+      <Rank>0.333333343</Rank>
+      <Thesaurus>NAL</Thesaurus>
+    </Annotation>
+    <Annotation i:type="ConceptAnnotation">
+      <AFreq>1</AFreq>
+      <ConceptID>17007</ConceptID>
+      <Name>carbon dioxide</Name>
+      <Rank>0.333333343</Rank>
+      <Thesaurus>NAL</Thesaurus>
+    </Annotation>
+    <Annotation i:type="ConceptAnnotation">
+      <AFreq>1</AFreq>
+      <ConceptID>6435</ConceptID>
+      <Name>water</Name>
+      <Rank>0.333333343</Rank>
+      <Thesaurus>NAL</Thesaurus>
+    </Annotation>
+    <Annotation i:type="ConceptAnnotation">
+      <AFreq>2</AFreq>
+      <ConceptID>8381</ConceptID>
+      <Name>oxygen</Name>
+      <Rank>0.6666667</Rank>
+      <Thesaurus>NAL</Thesaurus>
+    </Annotation>
+    <Annotation i:type="ConceptAnnotation">
+      <AFreq>1</AFreq>
+      <ConceptID>5497</ConceptID>
+      <Name>wastes</Name>
+      <Rank>0.333333343</Rank>
+      <Thesaurus>NAL</Thesaurus>
+    </Annotation>
+    <Annotation i:type="ConceptAnnotation">
+      <AFreq>1</AFreq>
+      <ConceptID>72</ConceptID>
+      <Name>Cyanobacteria</Name>
+      <Rank>0.333333343</Rank>
+      <Thesaurus>NAL</Thesaurus>
+    </Annotation>
+    <Annotation i:type="ConceptAnnotation">
+      <AFreq>1</AFreq>
+      <ConceptID>13646</ConceptID>
+      <Name>Earth atmosphere</Name>
+      <Rank>0.333333343</Rank>
+      <Thesaurus>NAL</Thesaurus>
+    </Annotation>
+    <Annotation i:type="ConceptAnnotation">
+      <AFreq>1</AFreq>
+      <ConceptID>65240</ConceptID>
+      <Name>supply</Name>
+      <Rank>0.333333343</Rank>
+      <Thesaurus>NAL</Thesaurus>
+    </Annotation>
+    <Annotation i:type="ConceptAnnotation">
+      <AFreq>1</AFreq>
+      <ConceptID>270</ConceptID>
+      <Name>organic compounds</Name>
+      <Rank>0.333333343</Rank>
+      <Thesaurus>NAL</Thesaurus>
+    </Annotation>
+    <Annotation i:type="TermAnnotation">
+      <ConceptID>14059</ConceptID>
+      <Flags xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:string>Q227.301.391.059</a:string>
+        <a:string>Q418.301.391.059</a:string>
+        <a:string>Q227.301.202.059</a:string>
+        <a:string>Q418.301.202.059</a:string>
+      </Flags>
+      <MatchScore>0.9</MatchScore>
+      <OrderingQuality>1</OrderingQuality>
+      <TermID>T101940</TermID>
+      <TermType>PrefLabel</TermType>
+      <Text>Photosynthesis</Text>
+      <TextEnd>14</TextEnd>
+      <TextOffset>0</TextOffset>
+      <Thesaurus>NAL</Thesaurus>
+      <Tokens xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:int>0</a:int>
+      </Tokens>
+    </Annotation>
+    <Annotation i:type="TermAnnotation">
+      <ConceptID>874</ConceptID>
+      <Flags xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:string>N874</a:string>
+        <a:string>Q628.874</a:string>
+      </Flags>
+      <MatchScore>0.9</MatchScore>
+      <OrderingQuality>1</OrderingQuality>
+      <TermID>T372030</TermID>
+      <TermType>NonPrefLabel</TermType>
+      <Text>plants</Text>
+      <TextEnd>42</TextEnd>
+      <TextOffset>36</TextOffset>
+      <Thesaurus>NAL</Thesaurus>
+      <Tokens xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:int>12</a:int>
+      </Tokens>
+    </Annotation>
+    <Annotation i:type="TermAnnotation">
+      <ConceptID>4628</ConceptID>
+      <Flags xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:string>Q628</a:string>
+      </Flags>
+      <MatchScore>0.9</MatchScore>
+      <OrderingQuality>1</OrderingQuality>
+      <TermID>T094825</TermID>
+      <TermType>PrefLabel</TermType>
+      <Text>organisms</Text>
+      <TextEnd>62</TextEnd>
+      <TextOffset>53</TextOffset>
+      <Thesaurus>NAL</Thesaurus>
+      <Tokens xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:int>18</a:int>
+      </Tokens>
+    </Annotation>
+    <Annotation i:type="TermAnnotation">
+      <ConceptID>37097</ConceptID>
+      <Flags xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:string>M975.097</a:string>
+      </Flags>
+      <MatchScore>0.9</MatchScore>
+      <OrderingQuality>1</OrderingQuality>
+      <TermID>T048102</TermID>
+      <TermType>PrefLabel</TermType>
+      <Text>energy</Text>
+      <TextEnd>106</TextEnd>
+      <TextOffset>100</TextOffset>
+      <Thesaurus>NAL</Thesaurus>
+      <Tokens xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:int>30</a:int>
+      </Tokens>
+    </Annotation>
+    <Annotation i:type="TermAnnotation">
+      <ConceptID>123238</ConceptID>
+      <Flags xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:string>L352.718.238</a:string>
+        <a:string>L524.718.238</a:string>
+        <a:string>ignore</a:string>
+      </Flags>
+      <MatchScore>0.9</MatchScore>
+      <OrderingQuality>1</OrderingQuality>
+      <TermID>T123238</TermID>
+      <TermType>NonPrefLabel</TermType>
+      <Text>fuel</Text>
+      <TextEnd>141</TextEnd>
+      <TextOffset>137</TextOffset>
+      <Thesaurus>NAL</Thesaurus>
+      <Tokens xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:int>44</a:int>
+      </Tokens>
+    </Annotation>
+    <Annotation i:type="TermAnnotation">
+      <ConceptID>17362</ConceptID>
+      <Flags xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:string>L468.169.362</a:string>
+        <a:string>confirmed</a:string>
+      </Flags>
+      <MatchScore>0.9</MatchScore>
+      <OrderingQuality>1</OrderingQuality>
+      <TermID>T056534</TermID>
+      <TermType>PrefLabel</TermType>
+      <Text>fuel</Text>
+      <TextEnd>141</TextEnd>
+      <TextOffset>137</TextOffset>
+      <Thesaurus>NAL</Thesaurus>
+      <Tokens xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:int>44</a:int>
+      </Tokens>
+    </Annotation>
+    <Annotation i:type="TermAnnotation">
+      <ConceptID>4628</ConceptID>
+      <Flags xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:string>Q628</a:string>
+      </Flags>
+      <MatchScore>0.9</MatchScore>
+      <OrderingQuality>1</OrderingQuality>
+      <TermID>T094825</TermID>
+      <TermType>PrefLabel</TermType>
+      <Text>organisms</Text>
+      <TextEnd>155</TextEnd>
+      <TextOffset>146</TextOffset>
+      <Thesaurus>NAL</Thesaurus>
+      <Tokens xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:int>48</a:int>
+      </Tokens>
+    </Annotation>
+    <Annotation i:type="TermAnnotation">
+      <ConceptID>37097</ConceptID>
+      <Flags xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:string>M975.097</a:string>
+      </Flags>
+      <MatchScore>0.9</MatchScore>
+      <OrderingQuality>1</OrderingQuality>
+      <TermID>T048102</TermID>
+      <TermType>PrefLabel</TermType>
+      <Text>energy</Text>
+      <TextEnd>188</TextEnd>
+      <TextOffset>182</TextOffset>
+      <Thesaurus>NAL</Thesaurus>
+      <Tokens xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:int>57</a:int>
+      </Tokens>
+    </Annotation>
+    <Annotation i:type="TermAnnotation">
+      <ConceptID>17263</ConceptID>
+      <Flags xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:string>Q227.812.263</a:string>
+        <a:string>M183.812.263</a:string>
+      </Flags>
+      <MatchScore>0.9</MatchScore>
+      <OrderingQuality>1</OrderingQuality>
+      <TermID>T024458</TermID>
+      <TermType>PrefLabel</TermType>
+      <Text>carbohydrate</Text>
+      <TextEnd>214</TextEnd>
+      <TextOffset>202</TextOffset>
+      <Thesaurus>NAL</Thesaurus>
+      <Tokens xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:int>65</a:int>
+      </Tokens>
+    </Annotation>
+    <Annotation i:type="TermAnnotation">
+      <ConceptID>17007</ConceptID>
+      <Flags xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:string>M183.008.265.279.007</a:string>
+      </Flags>
+      <MatchScore>0.9</MatchScore>
+      <OrderingQuality>1</OrderingQuality>
+      <TermID>T024465</TermID>
+      <TermType>PrefLabel</TermType>
+      <Text>carbon dioxide</Text>
+      <TextEnd>282</TextEnd>
+      <TextOffset>268</TextOffset>
+      <Thesaurus>NAL</Thesaurus>
+      <Tokens xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:int>83</a:int>
+        <a:int>85</a:int>
+      </Tokens>
+    </Annotation>
+    <Annotation i:type="TermAnnotation">
+      <ConceptID>6435</ConceptID>
+      <Flags xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:string>L067.435</a:string>
+      </Flags>
+      <MatchScore>1</MatchScore>
+      <OrderingQuality>1</OrderingQuality>
+      <TermID>T149033</TermID>
+      <TermType>PrefLabel</TermType>
+      <Text>water</Text>
+      <TextEnd>292</TextEnd>
+      <TextOffset>287</TextOffset>
+      <Thesaurus>NAL</Thesaurus>
+      <Tokens xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:int>89</a:int>
+      </Tokens>
+    </Annotation>
+    <Annotation i:type="TermAnnotation">
+      <ConceptID>8381</ConceptID>
+      <Flags xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:string>M183.264.371.381</a:string>
+      </Flags>
+      <MatchScore>0.9</MatchScore>
+      <OrderingQuality>1</OrderingQuality>
+      <TermID>T096157</TermID>
+      <TermType>PrefLabel</TermType>
+      <Text>oxygen</Text>
+      <TextEnd>314</TextEnd>
+      <TextOffset>308</TextOffset>
+      <Thesaurus>NAL</Thesaurus>
+      <Tokens xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:int>98</a:int>
+      </Tokens>
+    </Annotation>
+    <Annotation i:type="TermAnnotation">
+      <ConceptID>5497</ConceptID>
+      <Flags xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:string>L440.497</a:string>
+      </Flags>
+      <MatchScore>0.9</MatchScore>
+      <OrderingQuality>1</OrderingQuality>
+      <TermID>T149018</TermID>
+      <TermType>PrefLabel</TermType>
+      <Text>waste</Text>
+      <TextEnd>342</TextEnd>
+      <TextOffset>337</TextOffset>
+      <Thesaurus>NAL</Thesaurus>
+      <Tokens xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:int>110</a:int>
+      </Tokens>
+    </Annotation>
+    <Annotation i:type="TermAnnotation">
+      <ConceptID>874</ConceptID>
+      <Flags xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:string>N874</a:string>
+        <a:string>Q628.874</a:string>
+      </Flags>
+      <MatchScore>0.9</MatchScore>
+      <OrderingQuality>1</OrderingQuality>
+      <TermID>T372030</TermID>
+      <TermType>NonPrefLabel</TermType>
+      <Text>plants</Text>
+      <TextEnd>363</TextEnd>
+      <TextOffset>357</TextOffset>
+      <Thesaurus>NAL</Thesaurus>
+      <Tokens xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:int>117</a:int>
+      </Tokens>
+    </Annotation>
+    <Annotation i:type="TermAnnotation">
+      <ConceptID>72</ConceptID>
+      <Flags xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:string>A073.072</a:string>
+      </Flags>
+      <MatchScore>0.9</MatchScore>
+      <OrderingQuality>1</OrderingQuality>
+      <TermID>T037786</TermID>
+      <TermType>NonPrefLabel</TermType>
+      <Text>cyanobacteria</Text>
+      <TextEnd>393</TextEnd>
+      <TextOffset>380</TextOffset>
+      <Thesaurus>NAL</Thesaurus>
+      <Tokens xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:int>125</a:int>
+      </Tokens>
+    </Annotation>
+    <Annotation i:type="TermAnnotation">
+      <ConceptID>14059</ConceptID>
+      <Flags xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:string>Q227.301.391.059</a:string>
+        <a:string>Q418.301.391.059</a:string>
+        <a:string>Q227.301.202.059</a:string>
+        <a:string>Q418.301.202.059</a:string>
+      </Flags>
+      <MatchScore>0.9</MatchScore>
+      <OrderingQuality>1</OrderingQuality>
+      <TermID>T101940</TermID>
+      <TermType>PrefLabel</TermType>
+      <Text>photosynthesis</Text>
+      <TextEnd>416</TextEnd>
+      <TextOffset>402</TextOffset>
+      <Thesaurus>NAL</Thesaurus>
+      <Tokens xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:int>129</a:int>
+      </Tokens>
+    </Annotation>
+    <Annotation i:type="TermAnnotation">
+      <ConceptID>4628</ConceptID>
+      <Flags xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:string>Q628</a:string>
+      </Flags>
+      <MatchScore>0.9</MatchScore>
+      <OrderingQuality>1</OrderingQuality>
+      <TermID>T094825</TermID>
+      <TermType>PrefLabel</TermType>
+      <Text>organisms</Text>
+      <TextEnd>432</TextEnd>
+      <TextOffset>423</TextOffset>
+      <Thesaurus>NAL</Thesaurus>
+      <Tokens xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:int>134</a:int>
+      </Tokens>
+    </Annotation>
+    <Annotation i:type="TermAnnotation">
+      <ConceptID>14059</ConceptID>
+      <Flags xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:string>Q227.301.391.059</a:string>
+        <a:string>Q418.301.391.059</a:string>
+        <a:string>Q227.301.202.059</a:string>
+        <a:string>Q418.301.202.059</a:string>
+      </Flags>
+      <MatchScore>0.9</MatchScore>
+      <OrderingQuality>1</OrderingQuality>
+      <TermID>T101940</TermID>
+      <TermType>PrefLabel</TermType>
+      <Text>Photosynthesis</Text>
+      <TextEnd>474</TextEnd>
+      <TextOffset>460</TextOffset>
+      <Thesaurus>NAL</Thesaurus>
+      <Tokens xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:int>141</a:int>
+      </Tokens>
+    </Annotation>
+    <Annotation i:type="TermAnnotation">
+      <ConceptID>8381</ConceptID>
+      <Flags xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:string>M183.264.371.381</a:string>
+      </Flags>
+      <MatchScore>0.9</MatchScore>
+      <OrderingQuality>1</OrderingQuality>
+      <TermID>T096157</TermID>
+      <TermType>PrefLabel</TermType>
+      <Text>oxygen</Text>
+      <TextEnd>537</TextEnd>
+      <TextOffset>531</TextOffset>
+      <Thesaurus>NAL</Thesaurus>
+      <Tokens xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:int>157</a:int>
+      </Tokens>
+    </Annotation>
+    <Annotation i:type="TermAnnotation">
+      <ConceptID>13646</ConceptID>
+      <Flags xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:string>L647.646</a:string>
+      </Flags>
+      <MatchScore>0.9</MatchScore>
+      <OrderingQuality>1</OrderingQuality>
+      <TermID>T013646</TermID>
+      <TermType>PrefLabel</TermType>
+      <Text>Earth's atmosphere</Text>
+      <TextEnd>571</TextEnd>
+      <TextOffset>553</TextOffset>
+      <Thesaurus>NAL</Thesaurus>
+      <Tokens xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:int>165</a:int>
+        <a:int>167</a:int>
+      </Tokens>
+    </Annotation>
+    <Annotation i:type="TermAnnotation">
+      <ConceptID>65240</ConceptID>
+      <Flags xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:string>D261.348.239.240</a:string>
+      </Flags>
+      <MatchScore>0.9</MatchScore>
+      <OrderingQuality>1</OrderingQuality>
+      <TermID>T136906</TermID>
+      <TermType>PrefLabel</TermType>
+      <Text>supplies</Text>
+      <TextEnd>585</TextEnd>
+      <TextOffset>577</TextOffset>
+      <Thesaurus>NAL</Thesaurus>
+      <Tokens xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:int>172</a:int>
+      </Tokens>
+    </Annotation>
+    <Annotation i:type="TermAnnotation">
+      <ConceptID>270</ConceptID>
+      <Flags xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:string>M183.008.270</a:string>
+      </Flags>
+      <MatchScore>0.9</MatchScore>
+      <OrderingQuality>1</OrderingQuality>
+      <TermID>T094766</TermID>
+      <TermType>NonPrefLabel</TermType>
+      <Text>organic compounds</Text>
+      <TextEnd>613</TextEnd>
+      <TextOffset>596</TextOffset>
+      <Thesaurus>NAL</Thesaurus>
+      <Tokens xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:int>178</a:int>
+        <a:int>180</a:int>
+      </Tokens>
+    </Annotation>
+    <Annotation i:type="TermAnnotation">
+      <ConceptID>37097</ConceptID>
+      <Flags xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:string>M975.097</a:string>
+      </Flags>
+      <MatchScore>0.9</MatchScore>
+      <OrderingQuality>1</OrderingQuality>
+      <TermID>T048102</TermID>
+      <TermType>PrefLabel</TermType>
+      <Text>energy</Text>
+      <TextEnd>636</TextEnd>
+      <TextOffset>630</TextOffset>
+      <Thesaurus>NAL</Thesaurus>
+      <Tokens xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:int>190</a:int>
+      </Tokens>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>1</End>
+      <Offset>0</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>3</LexicalSource>
+      <SemTag>nn</SemTag>
+      <Tag>nn</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>3</End>
+      <Offset>2</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>bez</SemTag>
+      <Tag>be</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>5</End>
+      <Offset>4</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>dt</SemTag>
+      <Tag>dt</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>7</End>
+      <Offset>6</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>nn</SemTag>
+      <Tag>nn</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>9</End>
+      <Offset>8</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>vb</SemTag>
+      <Tag>vb</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>11</End>
+      <Offset>10</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>in</SemTag>
+      <Tag>in</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>13</End>
+      <Offset>12</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>nns</SemTag>
+      <Tag>nns</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>15</End>
+      <Offset>14</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>cc</SemTag>
+      <Tag>cc</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>17</End>
+      <Offset>16</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>dt</SemTag>
+      <Tag>dt</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>19</End>
+      <Offset>18</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>nns</SemTag>
+      <Tag>nns</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>21</End>
+      <Offset>20</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>to</SemTag>
+      <Tag>to</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>23</End>
+      <Offset>22</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>vb</SemTag>
+      <Tag>vb</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>25</End>
+      <Offset>24</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>3</LexicalSource>
+      <SemTag>nn</SemTag>
+      <Tag>nn</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>27</End>
+      <Offset>26</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>in</SemTag>
+      <Tag>in</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>29</End>
+      <Offset>28</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>jj</SemTag>
+      <Tag>jj</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>31</End>
+      <Offset>30</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>nn</SemTag>
+      <Tag>nn</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>33</End>
+      <Offset>32</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>wp</SemTag>
+      <Tag>wp</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>35</End>
+      <Offset>34</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>md</SemTag>
+      <Tag>md</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>37</End>
+      <Offset>36</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>rb</SemTag>
+      <Tag>rb</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>39</End>
+      <Offset>38</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>be</SemTag>
+      <Tag>be</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>41</End>
+      <Offset>40</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>vb</SemTag>
+      <Tag>vb</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>43</End>
+      <Offset>42</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>in</SemTag>
+      <Tag>in</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>45</End>
+      <Offset>44</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>nn</SemTag>
+      <Tag>nn</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>47</End>
+      <Offset>46</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>dt</SemTag>
+      <Tag>dt</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>51</End>
+      <Offset>48</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>3</LexicalSource>
+      <SemTag>nns</SemTag>
+      <Tag>nns</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>52</End>
+      <Offset>51</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>-1</LexicalSource>
+      <SemTag>LT</SemTag>
+      <Tag>LT</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>54</End>
+      <Offset>53</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>dt</SemTag>
+      <Tag>dt</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>56</End>
+      <Offset>55</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>nn</SemTag>
+      <Tag>nn</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>58</End>
+      <Offset>57</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>nn</SemTag>
+      <Tag>nn</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>60</End>
+      <Offset>59</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>bez</SemTag>
+      <Tag>be</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>62</End>
+      <Offset>61</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>vb</SemTag>
+      <Tag>vb</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>64</End>
+      <Offset>63</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>in</SemTag>
+      <Tag>in</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>66</End>
+      <Offset>65</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>3</LexicalSource>
+      <SemTag>jj</SemTag>
+      <Tag>jj</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>68</End>
+      <Offset>67</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>nns</SemTag>
+      <Tag>nns</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>69</End>
+      <Offset>68</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>-1</LexicalSource>
+      <SemTag>,</SemTag>
+      <Tag>LT</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>71</End>
+      <Offset>70</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>jj</SemTag>
+      <Tag>jj</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>73</End>
+      <Offset>72</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>3</LexicalSource>
+      <SemTag>nns</SemTag>
+      <Tag>nns</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>74</End>
+      <Offset>73</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>-1</LexicalSource>
+      <SemTag>,</SemTag>
+      <Tag>LT</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>76</End>
+      <Offset>75</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>wdt</SemTag>
+      <Tag>wdt</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>78</End>
+      <Offset>77</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>be</SemTag>
+      <Tag>be</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>80</End>
+      <Offset>79</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>vb</SemTag>
+      <Tag>vb</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>82</End>
+      <Offset>81</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>in</SemTag>
+      <Tag>in</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>84</End>
+      <Offset>83</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>nn</SemTag>
+      <Tag>nn</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>86</End>
+      <Offset>85</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>nn</SemTag>
+      <Tag>nn</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>88</End>
+      <Offset>87</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>cc</SemTag>
+      <Tag>cc</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>90</End>
+      <Offset>89</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>nn</SemTag>
+      <Tag>nn</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>91</End>
+      <Offset>90</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>-1</LexicalSource>
+      <SemTag>LT</SemTag>
+      <Tag>LT</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>92</End>
+      <Offset>91</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>in</SemTag>
+      <Tag>in</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>94</End>
+      <Offset>93</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>dt</SemTag>
+      <Tag>dt</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>96</End>
+      <Offset>95</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>nns</SemTag>
+      <Tag>nns</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>97</End>
+      <Offset>96</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>-1</LexicalSource>
+      <SemTag>,</SemTag>
+      <Tag>LT</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>99</End>
+      <Offset>98</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>nn</SemTag>
+      <Tag>nn</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>101</End>
+      <Offset>100</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>bez</SemTag>
+      <Tag>be</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>103</End>
+      <Offset>102</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>rb</SemTag>
+      <Tag>rb</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>105</End>
+      <Offset>104</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>vb</SemTag>
+      <Tag>vb</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>107</End>
+      <Offset>106</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>cs</SemTag>
+      <Tag>cs</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>109</End>
+      <Offset>108</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>dt</SemTag>
+      <Tag>dt</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>111</End>
+      <Offset>110</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>nn</SemTag>
+      <Tag>nn</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>113</End>
+      <Offset>112</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>nn</SemTag>
+      <Tag>nn</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>114</End>
+      <Offset>113</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>-1</LexicalSource>
+      <SemTag>LT</SemTag>
+      <Tag>LT</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>116</End>
+      <Offset>115</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>dt</SemTag>
+      <Tag>dt</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>118</End>
+      <Offset>117</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>nns</SemTag>
+      <Tag>nns</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>119</End>
+      <Offset>118</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>-1</LexicalSource>
+      <SemTag>,</SemTag>
+      <Tag>LT</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>121</End>
+      <Offset>120</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>3</LexicalSource>
+      <SemTag>nns</SemTag>
+      <Tag>nns</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>122</End>
+      <Offset>121</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>-1</LexicalSource>
+      <SemTag>,</SemTag>
+      <Tag>LT</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>124</End>
+      <Offset>123</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>cc</SemTag>
+      <Tag>cc</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>126</End>
+      <Offset>125</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>3</LexicalSource>
+      <SemTag>nn</SemTag>
+      <Tag>nn</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>128</End>
+      <Offset>127</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>vb</SemTag>
+      <Tag>vb</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>130</End>
+      <Offset>129</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>3</LexicalSource>
+      <SemTag>nn</SemTag>
+      <Tag>nn</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>131</End>
+      <Offset>130</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>-1</LexicalSource>
+      <SemTag>LT</SemTag>
+      <Tag>LT</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>133</End>
+      <Offset>132</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>ab</SemTag>
+      <Tag>ab</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>135</End>
+      <Offset>134</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>nns</SemTag>
+      <Tag>nns</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>137</End>
+      <Offset>136</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>be</SemTag>
+      <Tag>be</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>139</End>
+      <Offset>138</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>3</LexicalSource>
+      <SemTag>nns</SemTag>
+      <Tag>nns</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>140</End>
+      <Offset>139</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>-1</LexicalSource>
+      <SemTag>LT</SemTag>
+      <Tag>LT</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>142</End>
+      <Offset>141</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>3</LexicalSource>
+      <SemTag>nn</SemTag>
+      <Tag>nn</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>144</End>
+      <Offset>143</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>bez</SemTag>
+      <Tag>be</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>146</End>
+      <Offset>145</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>rb</SemTag>
+      <Tag>rb</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>148</End>
+      <Offset>147</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>jj</SemTag>
+      <Tag>jj</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>150</End>
+      <Offset>149</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>in</SemTag>
+      <Tag>in</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>152</End>
+      <Offset>151</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>vbg</SemTag>
+      <Tag>vb</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>154</End>
+      <Offset>153</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>3</LexicalSource>
+      <SemTag>vbg</SemTag>
+      <Tag>vb</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>156</End>
+      <Offset>155</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>dt</SemTag>
+      <Tag>dt</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>158</End>
+      <Offset>157</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>nn</SemTag>
+      <Tag>nn</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>160</End>
+      <Offset>159</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>nn</SemTag>
+      <Tag>nn</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>162</End>
+      <Offset>161</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>in</SemTag>
+      <Tag>in</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>164</End>
+      <Offset>163</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>dt</SemTag>
+      <Tag>dt</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>166</End>
+      <Offset>165</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>nn$</SemTag>
+      <Tag>nn$</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>168</End>
+      <Offset>167</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>nn</SemTag>
+      <Tag>nn</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>169</End>
+      <Offset>168</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>-1</LexicalSource>
+      <SemTag>,</SemTag>
+      <Tag>LT</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>171</End>
+      <Offset>170</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>cc</SemTag>
+      <Tag>cc</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>173</End>
+      <Offset>172</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>vbz</SemTag>
+      <Tag>vb</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>175</End>
+      <Offset>174</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>ab</SemTag>
+      <Tag>ab</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>177</End>
+      <Offset>176</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>3</LexicalSource>
+      <SemTag>nn</SemTag>
+      <Tag>nn</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>179</End>
+      <Offset>178</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>jj</SemTag>
+      <Tag>jj</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>181</End>
+      <Offset>180</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>nns</SemTag>
+      <Tag>nns</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>183</End>
+      <Offset>182</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>cc</SemTag>
+      <Tag>cc</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>185</End>
+      <Offset>184</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>dt</SemTag>
+      <Tag>dt</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>187</End>
+      <Offset>186</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>in</SemTag>
+      <Tag>in</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>189</End>
+      <Offset>188</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>dt</SemTag>
+      <Tag>dt</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>191</End>
+      <Offset>190</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>nn</SemTag>
+      <Tag>nn</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>193</End>
+      <Offset>192</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>jj</SemTag>
+      <Tag>jj</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>195</End>
+      <Offset>194</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>in</SemTag>
+      <Tag>in</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>197</End>
+      <Offset>196</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>nn</SemTag>
+      <Tag>nn</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>199</End>
+      <Offset>198</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>in</SemTag>
+      <Tag>in</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>201</End>
+      <Offset>200</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>0</LexicalSource>
+      <SemTag>nn</SemTag>
+      <Tag>nn</Tag>
+    </Annotation>
+    <Annotation i:type="POSTag">
+      <End>202</End>
+      <Offset>201</Offset>
+      <Alternative i:nil="true"/>
+      <Distance>0</Distance>
+      <LexicalSource>-1</LexicalSource>
+      <SemTag>LT</SemTag>
+      <Tag>LT</Tag>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>Photosynthesis</Text>
+      <Token>0</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>is</Text>
+      <Token>2</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>a</Text>
+      <Token>4</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>process</Text>
+      <Token>6</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>used</Text>
+      <Token>8</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>by</Text>
+      <Token>10</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>plants</Text>
+      <Token>12</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>and</Text>
+      <Token>14</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>other</Text>
+      <Token>16</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>organisms</Text>
+      <Token>18</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>to</Text>
+      <Token>20</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>convert</Text>
+      <Token>22</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>lightenergy</Text>
+      <Token>24</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>into</Text>
+      <Token>26</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>chemical</Text>
+      <Token>28</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>energy</Text>
+      <Token>30</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>that</Text>
+      <Token>32</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>can</Text>
+      <Token>34</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>later</Text>
+      <Token>36</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>be</Text>
+      <Token>38</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>released</Text>
+      <Token>40</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>to</Text>
+      <Token>42</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>fuel</Text>
+      <Token>44</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>the</Text>
+      <Token>46</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>organisms</Text>
+      <Token>48</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>'</Text>
+      <Token>49</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>activities</Text>
+      <Token>50</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>.</Text>
+      <Token>51</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>This</Text>
+      <Token>53</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>chemical</Text>
+      <Token>55</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>energy</Text>
+      <Token>57</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>is</Text>
+      <Token>59</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>stored</Text>
+      <Token>61</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>in</Text>
+      <Token>63</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>carbohydrate</Text>
+      <Token>65</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>molecules</Text>
+      <Token>67</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>,</Text>
+      <Token>68</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>such</Text>
+      <Token>70</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>assugars</Text>
+      <Token>72</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>,</Text>
+      <Token>73</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>which</Text>
+      <Token>75</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>are</Text>
+      <Token>77</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>synthesized</Text>
+      <Token>79</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>from</Text>
+      <Token>81</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>carbon</Text>
+      <Token>83</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>dioxide</Text>
+      <Token>85</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>and</Text>
+      <Token>87</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>water</Text>
+      <Token>89</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>.</Text>
+      <Token>90</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>In</Text>
+      <Token>91</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>most</Text>
+      <Token>93</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>cases</Text>
+      <Token>95</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>,</Text>
+      <Token>96</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>oxygen</Text>
+      <Token>98</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>is</Text>
+      <Token>100</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>also</Text>
+      <Token>102</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>released</Text>
+      <Token>104</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>as</Text>
+      <Token>106</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>a</Text>
+      <Token>108</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>waste</Text>
+      <Token>110</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>product</Text>
+      <Token>112</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>.</Text>
+      <Token>113</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>Most</Text>
+      <Token>115</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>plants</Text>
+      <Token>117</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>,</Text>
+      <Token>118</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>mostalgae</Text>
+      <Token>120</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>,</Text>
+      <Token>121</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>and</Text>
+      <Token>123</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>cyanobacteria</Text>
+      <Token>125</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>perform</Text>
+      <Token>127</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>photosynthesis</Text>
+      <Token>129</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>;</Text>
+      <Token>130</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>such</Text>
+      <Token>132</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>organisms</Text>
+      <Token>134</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>are</Text>
+      <Token>136</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>calledphotoautotrophs</Text>
+      <Token>138</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>.</Text>
+      <Token>139</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>Photosynthesis</Text>
+      <Token>141</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>is</Text>
+      <Token>143</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>largely</Text>
+      <Token>145</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>responsible</Text>
+      <Token>147</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>for</Text>
+      <Token>149</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>producing</Text>
+      <Token>151</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>andmaintaining</Text>
+      <Token>153</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>the</Text>
+      <Token>155</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>oxygen</Text>
+      <Token>157</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>content</Text>
+      <Token>159</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>of</Text>
+      <Token>161</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>the</Text>
+      <Token>163</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>Earth's</Text>
+      <Token>165</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>atmosphere</Text>
+      <Token>167</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>,</Text>
+      <Token>168</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>and</Text>
+      <Token>170</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>supplies</Text>
+      <Token>172</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>all</Text>
+      <Token>174</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>ofthe</Text>
+      <Token>176</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>organic</Text>
+      <Token>178</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>compounds</Text>
+      <Token>180</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>and</Text>
+      <Token>182</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>most</Text>
+      <Token>184</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>of</Text>
+      <Token>186</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>the</Text>
+      <Token>188</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>energy</Text>
+      <Token>190</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>necessary</Text>
+      <Token>192</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>for</Text>
+      <Token>194</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>life</Text>
+      <Token>196</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>on</Text>
+      <Token>198</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>Earth</Text>
+      <Token>200</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>1</Score>
+      <SourceID>0</SourceID>
+      <Text>.</Text>
+      <Token>201</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>photosynthesis</Text>
+      <Token>0</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>be</Text>
+      <Token>2</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>a</Text>
+      <Token>4</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>process</Text>
+      <Token>6</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>used</Text>
+      <Token>8</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>by</Text>
+      <Token>10</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Depluralized Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>plant</Text>
+      <Token>12</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>and</Text>
+      <Token>14</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>other</Text>
+      <Token>16</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Depluralized Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>organism</Text>
+      <Token>18</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>to</Text>
+      <Token>20</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>convert</Text>
+      <Token>22</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>lightenergy</Text>
+      <Token>24</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>into</Text>
+      <Token>26</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>chemical</Text>
+      <Token>28</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>energy</Text>
+      <Token>30</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>that</Text>
+      <Token>32</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>can</Text>
+      <Token>34</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>late</Text>
+      <Token>36</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>be</Text>
+      <Token>38</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>released</Text>
+      <Token>40</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>to</Text>
+      <Token>42</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>fuel</Text>
+      <Token>44</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>the</Text>
+      <Token>46</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Depluralized Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>organism</Text>
+      <Token>48</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>'</Text>
+      <Token>49</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Depluralized</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>activity</Text>
+      <Token>50</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>.</Text>
+      <Token>51</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>this</Text>
+      <Token>53</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>chemical</Text>
+      <Token>55</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>energy</Text>
+      <Token>57</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>be</Text>
+      <Token>59</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>stored</Text>
+      <Token>61</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>in</Text>
+      <Token>63</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>carbohydrate</Text>
+      <Token>65</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Depluralized Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>molecule</Text>
+      <Token>67</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>,</Text>
+      <Token>68</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>such</Text>
+      <Token>70</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Depluralized Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>assugar</Text>
+      <Token>72</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>,</Text>
+      <Token>73</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>which</Text>
+      <Token>75</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>be</Text>
+      <Token>77</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>synthesized</Text>
+      <Token>79</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>from</Text>
+      <Token>81</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>carbon</Text>
+      <Token>83</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>dioxide</Text>
+      <Token>85</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>and</Text>
+      <Token>87</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>water</Text>
+      <Token>89</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>.</Text>
+      <Token>90</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>in</Text>
+      <Token>91</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>most</Text>
+      <Token>93</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Depluralized Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>case</Text>
+      <Token>95</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>,</Text>
+      <Token>96</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>oxygen</Text>
+      <Token>98</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>be</Text>
+      <Token>100</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>also</Text>
+      <Token>102</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>released</Text>
+      <Token>104</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>as</Text>
+      <Token>106</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>a</Text>
+      <Token>108</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>waste</Text>
+      <Token>110</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>product</Text>
+      <Token>112</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>.</Text>
+      <Token>113</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>most</Text>
+      <Token>115</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Depluralized Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>plant</Text>
+      <Token>117</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>,</Text>
+      <Token>118</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Depluralized Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>mostalga</Text>
+      <Token>120</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>,</Text>
+      <Token>121</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>and</Text>
+      <Token>123</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Depluralized</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>cyanobacterium</Text>
+      <Token>125</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>perform</Text>
+      <Token>127</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>photosynthesis</Text>
+      <Token>129</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>;</Text>
+      <Token>130</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>such</Text>
+      <Token>132</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Depluralized Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>organism</Text>
+      <Token>134</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>be</Text>
+      <Token>136</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Depluralized Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>calledphotoautotroph</Text>
+      <Token>138</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>.</Text>
+      <Token>139</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>photosynthesis</Text>
+      <Token>141</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Empty</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>be</Text>
+      <Token>143</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>largely</Text>
+      <Token>145</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>responsible</Text>
+      <Token>147</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>for</Text>
+      <Token>149</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>producing</Text>
+      <Token>151</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>andmaintaining</Text>
+      <Token>153</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>the</Text>
+      <Token>155</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>oxygen</Text>
+      <Token>157</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>content</Text>
+      <Token>159</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>of</Text>
+      <Token>161</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>the</Text>
+      <Token>163</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>earth</Text>
+      <Token>165</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>atmosphere</Text>
+      <Token>167</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>,</Text>
+      <Token>168</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>and</Text>
+      <Token>170</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Depluralized</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>supply</Text>
+      <Token>172</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>all</Text>
+      <Token>174</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>ofthe</Text>
+      <Token>176</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>organic</Text>
+      <Token>178</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Depluralized Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>compound</Text>
+      <Token>180</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>and</Text>
+      <Token>182</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>most</Text>
+      <Token>184</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>of</Text>
+      <Token>186</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>the</Text>
+      <Token>188</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>energy</Text>
+      <Token>190</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>necessary</Text>
+      <Token>192</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>for</Text>
+      <Token>194</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>life</Text>
+      <Token>196</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>on</Text>
+      <Token>198</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>earth</Text>
+      <Token>200</Token>
+    </Annotation>
+    <Annotation i:type="Word">
+      <Flags>Contained</Flags>
+      <Score>0.9</Score>
+      <SourceID>1</SourceID>
+      <Text>.</Text>
+      <Token>201</Token>
+    </Annotation>
+    <Annotation i:type="Sentence">
+      <End>53</End>
+      <Offset>0</Offset>
+      <Duplicate>-1</Duplicate>
+    </Annotation>
+    <Annotation i:type="Sentence">
+      <End>91</End>
+      <Offset>53</Offset>
+      <Duplicate>-1</Duplicate>
+    </Annotation>
+    <Annotation i:type="Sentence">
+      <End>115</End>
+      <Offset>91</Offset>
+      <Duplicate>-1</Duplicate>
+    </Annotation>
+    <Annotation i:type="Sentence">
+      <End>132</End>
+      <Offset>115</Offset>
+      <Duplicate>-1</Duplicate>
+    </Annotation>
+    <Annotation i:type="Sentence">
+      <End>141</End>
+      <Offset>132</Offset>
+      <Duplicate>-1</Duplicate>
+    </Annotation>
+    <Annotation i:type="Sentence">
+      <End>202</End>
+      <Offset>141</Offset>
+      <Duplicate>-1</Duplicate>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>14</End>
+      <Offset>0</Offset>
+      <Capitalisation>Initial Caps Lowers SentenceInitial</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight HasBoundaryLeft</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>15</End>
+      <Offset>14</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>17</End>
+      <Offset>15</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>18</End>
+      <Offset>17</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>19</End>
+      <Offset>18</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>20</End>
+      <Offset>19</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>27</End>
+      <Offset>20</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>28</End>
+      <Offset>27</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>32</End>
+      <Offset>28</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>33</End>
+      <Offset>32</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>35</End>
+      <Offset>33</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>36</End>
+      <Offset>35</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>42</End>
+      <Offset>36</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>43</End>
+      <Offset>42</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>46</End>
+      <Offset>43</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>47</End>
+      <Offset>46</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>52</End>
+      <Offset>47</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>53</End>
+      <Offset>52</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>62</End>
+      <Offset>53</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>63</End>
+      <Offset>62</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>65</End>
+      <Offset>63</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>66</End>
+      <Offset>65</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>73</End>
+      <Offset>66</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>74</End>
+      <Offset>73</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>85</End>
+      <Offset>74</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>86</End>
+      <Offset>85</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>90</End>
+      <Offset>86</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>91</End>
+      <Offset>90</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>99</End>
+      <Offset>91</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>100</End>
+      <Offset>99</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>106</End>
+      <Offset>100</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>107</End>
+      <Offset>106</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>111</End>
+      <Offset>107</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>112</End>
+      <Offset>111</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>115</End>
+      <Offset>112</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>116</End>
+      <Offset>115</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>121</End>
+      <Offset>116</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>122</End>
+      <Offset>121</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>124</End>
+      <Offset>122</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>125</End>
+      <Offset>124</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>133</End>
+      <Offset>125</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>134</End>
+      <Offset>133</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>136</End>
+      <Offset>134</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>137</End>
+      <Offset>136</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>141</End>
+      <Offset>137</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>142</End>
+      <Offset>141</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>145</End>
+      <Offset>142</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>146</End>
+      <Offset>145</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>155</End>
+      <Offset>146</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>156</End>
+      <Offset>155</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>Punct NoWhitespaceLeft NoWhitespaceRight NoBoundaryRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>166</End>
+      <Offset>156</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha NoWhitespaceLeft HasWhitespaceRight HasBoundaryRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>167</End>
+      <Offset>166</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>Punct SentenceBreaker NoWhitespaceLeft HasWhitespaceRight HasBoundaryRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>168</End>
+      <Offset>167</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>172</End>
+      <Offset>168</Offset>
+      <Capitalisation>Initial Caps Lowers SentenceInitial</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight HasBoundaryLeft</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>173</End>
+      <Offset>172</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>181</End>
+      <Offset>173</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>182</End>
+      <Offset>181</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>188</End>
+      <Offset>182</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>189</End>
+      <Offset>188</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>191</End>
+      <Offset>189</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>192</End>
+      <Offset>191</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>198</End>
+      <Offset>192</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>199</End>
+      <Offset>198</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>201</End>
+      <Offset>199</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>202</End>
+      <Offset>201</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>214</End>
+      <Offset>202</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>215</End>
+      <Offset>214</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>224</End>
+      <Offset>215</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>225</End>
+      <Offset>224</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>Punct Comma NoWhitespaceLeft HasWhitespaceRight HasBoundaryRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>226</End>
+      <Offset>225</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>230</End>
+      <Offset>226</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>231</End>
+      <Offset>230</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>239</End>
+      <Offset>231</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>240</End>
+      <Offset>239</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>Punct Comma NoWhitespaceLeft HasWhitespaceRight HasBoundaryRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>241</End>
+      <Offset>240</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>246</End>
+      <Offset>241</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>247</End>
+      <Offset>246</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>250</End>
+      <Offset>247</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>251</End>
+      <Offset>250</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>262</End>
+      <Offset>251</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>263</End>
+      <Offset>262</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>267</End>
+      <Offset>263</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>268</End>
+      <Offset>267</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>274</End>
+      <Offset>268</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>275</End>
+      <Offset>274</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>282</End>
+      <Offset>275</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>283</End>
+      <Offset>282</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>286</End>
+      <Offset>283</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>287</End>
+      <Offset>286</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>292</End>
+      <Offset>287</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft NoWhitespaceRight NoBoundaryRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>293</End>
+      <Offset>292</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>Punct SentenceBreaker NoWhitespaceLeft NoWhitespaceRight NoBoundaryRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>295</End>
+      <Offset>293</Offset>
+      <Capitalisation>Initial Caps Lowers SentenceInitial</Capitalisation>
+      <Type>Alpha NoWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>296</End>
+      <Offset>295</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>300</End>
+      <Offset>296</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>301</End>
+      <Offset>300</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>306</End>
+      <Offset>301</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>307</End>
+      <Offset>306</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>Punct Comma NoWhitespaceLeft HasWhitespaceRight HasBoundaryRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>308</End>
+      <Offset>307</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>314</End>
+      <Offset>308</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>315</End>
+      <Offset>314</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>317</End>
+      <Offset>315</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>318</End>
+      <Offset>317</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>322</End>
+      <Offset>318</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>323</End>
+      <Offset>322</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>331</End>
+      <Offset>323</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>332</End>
+      <Offset>331</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>334</End>
+      <Offset>332</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>335</End>
+      <Offset>334</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>336</End>
+      <Offset>335</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>337</End>
+      <Offset>336</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>342</End>
+      <Offset>337</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>343</End>
+      <Offset>342</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>350</End>
+      <Offset>343</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight HasBoundaryRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>351</End>
+      <Offset>350</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>Punct SentenceBreaker NoWhitespaceLeft HasWhitespaceRight HasBoundaryRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>352</End>
+      <Offset>351</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>356</End>
+      <Offset>352</Offset>
+      <Capitalisation>Initial Caps Lowers SentenceInitial</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight HasBoundaryLeft</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>357</End>
+      <Offset>356</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>363</End>
+      <Offset>357</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>364</End>
+      <Offset>363</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>Punct Comma NoWhitespaceLeft HasWhitespaceRight HasBoundaryRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>365</End>
+      <Offset>364</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>374</End>
+      <Offset>365</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>375</End>
+      <Offset>374</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>Punct Comma NoWhitespaceLeft HasWhitespaceRight HasBoundaryRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>376</End>
+      <Offset>375</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>379</End>
+      <Offset>376</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>380</End>
+      <Offset>379</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>393</End>
+      <Offset>380</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>394</End>
+      <Offset>393</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>401</End>
+      <Offset>394</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>402</End>
+      <Offset>401</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>416</End>
+      <Offset>402</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>417</End>
+      <Offset>416</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>Punct SentenceBreaker NoWhitespaceLeft HasWhitespaceRight HasBoundaryRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>418</End>
+      <Offset>417</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>422</End>
+      <Offset>418</Offset>
+      <Capitalisation>Lowers SentenceInitial</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>423</End>
+      <Offset>422</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>432</End>
+      <Offset>423</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>433</End>
+      <Offset>432</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>436</End>
+      <Offset>433</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>437</End>
+      <Offset>436</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>458</End>
+      <Offset>437</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight HasBoundaryRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>459</End>
+      <Offset>458</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>Punct SentenceBreaker NoWhitespaceLeft HasWhitespaceRight HasBoundaryRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>460</End>
+      <Offset>459</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>474</End>
+      <Offset>460</Offset>
+      <Capitalisation>Initial Caps Lowers SentenceInitial</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight HasBoundaryLeft</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>475</End>
+      <Offset>474</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>477</End>
+      <Offset>475</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>478</End>
+      <Offset>477</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>485</End>
+      <Offset>478</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>486</End>
+      <Offset>485</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>497</End>
+      <Offset>486</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>498</End>
+      <Offset>497</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>501</End>
+      <Offset>498</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>502</End>
+      <Offset>501</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>511</End>
+      <Offset>502</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>512</End>
+      <Offset>511</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>526</End>
+      <Offset>512</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>527</End>
+      <Offset>526</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>530</End>
+      <Offset>527</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>531</End>
+      <Offset>530</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>537</End>
+      <Offset>531</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>538</End>
+      <Offset>537</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>545</End>
+      <Offset>538</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>546</End>
+      <Offset>545</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>548</End>
+      <Offset>546</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>549</End>
+      <Offset>548</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>552</End>
+      <Offset>549</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>553</End>
+      <Offset>552</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>560</End>
+      <Offset>553</Offset>
+      <Capitalisation>TitleCap</Capitalisation>
+      <Type>Alpha QuoteS HasWhitespaceLeft HasWhitespaceRight HasBoundaryLeft</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>561</End>
+      <Offset>560</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>571</End>
+      <Offset>561</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>572</End>
+      <Offset>571</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>Punct Comma NoWhitespaceLeft HasWhitespaceRight HasBoundaryRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>573</End>
+      <Offset>572</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>576</End>
+      <Offset>573</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>577</End>
+      <Offset>576</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>585</End>
+      <Offset>577</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>586</End>
+      <Offset>585</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>589</End>
+      <Offset>586</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>590</End>
+      <Offset>589</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>595</End>
+      <Offset>590</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>596</End>
+      <Offset>595</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>603</End>
+      <Offset>596</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>604</End>
+      <Offset>603</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>613</End>
+      <Offset>604</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>614</End>
+      <Offset>613</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>617</End>
+      <Offset>614</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>618</End>
+      <Offset>617</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>622</End>
+      <Offset>618</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>623</End>
+      <Offset>622</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>625</End>
+      <Offset>623</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>626</End>
+      <Offset>625</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>629</End>
+      <Offset>626</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>630</End>
+      <Offset>629</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>636</End>
+      <Offset>630</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>637</End>
+      <Offset>636</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>646</End>
+      <Offset>637</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>647</End>
+      <Offset>646</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>650</End>
+      <Offset>647</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>651</End>
+      <Offset>650</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>655</End>
+      <Offset>651</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>656</End>
+      <Offset>655</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>658</End>
+      <Offset>656</Offset>
+      <Capitalisation>Lowers</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>659</End>
+      <Offset>658</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>White NoWhitespaceLeft NoWhitespaceRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>664</End>
+      <Offset>659</Offset>
+      <Capitalisation>TitleCap</Capitalisation>
+      <Type>Alpha HasWhitespaceLeft HasWhitespaceRight HasBoundaryLeft HasBoundaryRight</Type>
+    </Annotation>
+    <Annotation i:type="Token">
+      <End>665</End>
+      <Offset>664</Offset>
+      <Capitalisation>None</Capitalisation>
+      <Type>Punct SentenceBreaker NoWhitespaceLeft HasWhitespaceRight HasBoundaryRight</Type>
+    </Annotation>
+  </Annotations>
+</TextAnalysis>
