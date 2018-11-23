@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<TextAnalysis xmlns="http://www.collexis.com/annotations/" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+  <Annotations>
+    <Annotation i:type="SectionConceptAnnotation">
+      <AFreq>1</AFreq>
+      <ConceptID>14059</ConceptID>
+      <Name>photosynthesis</Name>
+      <Rank>1</Rank>
+      <Thesaurus>NAL</Thesaurus>
+      <Section>Lemma</Section>
+    </Annotation>
+    <Annotation i:type="SectionConceptAnnotation">
+      <AFreq>1</AFreq>
+      <ConceptID>14059</ConceptID>
+      <Name>photosynthesis</Name>
+      <Rank>0.333333343</Rank>
+      <Thesaurus>NAL</Thesaurus>
+      <Section>Definition</Section>
+    </Annotation>
+    <Annotation i:type="SectionConceptAnnotation">
+      <AFreq>1</AFreq>
+      <ConceptID>874</ConceptID>
+      <Name>plants (botany)</Name>
+      <Rank>0.333333343</Rank>
+      <Thesaurus>NAL</Thesaurus>
+      <Section>Definition</Section>
+    </Annotation>
+    <Annotation i:type="SectionConceptAnnotation">
+      <AFreq>2</AFreq>
+      <ConceptID>4628</ConceptID>
+      <Name>organisms</Name>
+      <Rank>0.6666667</Rank>
+      <Thesaurus>NAL</Thesaurus>
+      <Section>Definition</Section>
+    </Annotation>
+    <Annotation i:type="SectionConceptAnnotation">
+      <AFreq>1</AFreq>
+      <ConceptID>18228</ConceptID>
+      <Name>light</Name>
+      <Rank>0.333333343</Rank>
+      <Thesaurus>NAL</Thesaurus>
+      <Section>Definition</Section>
+    </Annotation>
+    <Annotation i:type="SectionConceptAnnotation">
+      <AFreq>3</AFreq>
+      <ConceptID>37097</ConceptID>
+      <Name>energy</Name>
+      <Rank>1</Rank>
+      <Thesaurus>NAL</Thesaurus>
+      <Section>Definition</Section>
+    </Annotation>
+    <Annotation i:type="SectionConceptAnnotation">
+      <AFreq>1</AFreq>
+      <ConceptID>17362</ConceptID>
+      <Name>fuels</Name>
+      <Rank>0.333333343</Rank>
+      <Thesaurus>NAL</Thesaurus>
+      <Section>Definition</Section>
+    </Annotation>
+    <Annotation i:type="SectionConceptAnnotation">
+      <AFreq>1</AFreq>
+      <ConceptID>17263</ConceptID>
+      <Name>carbohydrates</Name>
+      <Rank>0.333333343</Rank>
+      <Thesaurus>NAL</Thesaurus>
+      <Section>Definition</Section>
+    </Annotation>
+    <Annotation i:type="SectionConceptAnnotation">
+      <AFreq>1</AFreq>
+      <ConceptID>987</ConceptID>
+      <Name>sugars</Name>
+      <Rank>0.333333343</Rank>
+      <Thesaurus>NAL</Thesaurus>
+      <Section>Definition</Section>
+    </Annotation>
+    <Annotation i:type="SectionConceptAnnotation">
+      <AFreq>1</AFreq>
+      <ConceptID>17007</ConceptID>
+      <Name>carbon dioxide</Name>
+      <Rank>0.333333343</Rank>
+      <Thesaurus>NAL</Thesaurus>
+      <Section>Definition</Section>
+    </Annotation>
+    <Annotation i:type="SectionConceptAnnotation">
+      <AFreq>1</AFreq>
+      <ConceptID>6435</ConceptID>
+      <Name>water</Name>
+      <Rank>0.333333343</Rank>
+      <Thesaurus>NAL</Thesaurus>
+      <Section>Definition</Section>
+    </Annotation>
+  </Annotations>
+</TextAnalysis>

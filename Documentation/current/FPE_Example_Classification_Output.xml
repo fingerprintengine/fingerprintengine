@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<TextAnalysis xmlns="http://www.collexis.com/annotations/" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+  <Annotations>
+    <Annotation i:type="Category">
+      <Name>CPX</Name>
+      <Rank>0.822999</Rank>
+    </Annotation>
+    <Annotation i:type="Category">
+      <Name>MAT</Name>
+      <Rank>0.17642</Rank>
+    </Annotation>
+  </Annotations>
+</TextAnalysis>
